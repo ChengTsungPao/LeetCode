@@ -5,4 +5,4 @@ code1.py:
 * Memory Usage: 14 MB, less than 5.00% of Python3 online submissions for N-Queens.
 >dfs
 
-</br>note : code2.py see the "N-Queens II"
+</br>note : code2.py see the "N-Queens II" 
