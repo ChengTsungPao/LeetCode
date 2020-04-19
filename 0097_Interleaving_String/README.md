@@ -1,6 +1,6 @@
 ## Question: https://leetcode.com/problems/interleaving-string/
 
-code1.c
+code1.c:
 * Runtime: 944 ms, faster than 30.00% of C online submissions for Interleaving String.
 * Memory Usage: 5.1 MB, less than 100.00% of C online submissions for Interleaving String.
 >dfs
