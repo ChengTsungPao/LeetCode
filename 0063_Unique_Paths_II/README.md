@@ -10,5 +10,5 @@ code2.py:
 * Memory Usage: 13.8 MB, less than 8.89% of Python3 online submissions for Unique Paths II.
 >bottom up
 
-</br>note : Don't just use the dfs to solve this question !!!
+</br>note : Don't just use dfs to solve this question !!!
 
