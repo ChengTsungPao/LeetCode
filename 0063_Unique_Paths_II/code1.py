@@ -3,7 +3,7 @@ class Solution:
         dp = {}
         def dfs(x, y):
             if (x, y) not in dp:
-                if  x >= len(obstacleGrid) or y >= len(obstacleGrid[0]) or obstacleGrid[x][y] == 1:
+                if x >= len(obstacleGrid) or y >= len(obstacleGrid[0]) or obstacleGrid[x][y] == 1:
                     return 0
                 elif x == len(obstacleGrid) - 1 and y == len(obstacleGrid[0]) - 1:
                     return 1
