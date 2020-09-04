@@ -3,7 +3,7 @@ class Solution:
         dp = {}
         def dfs(x, y):
             if (x, y) not in dp:
-                if  x >= m or y >= n:
+                if x >= m or y >= n:
                     return 0
                 elif x == m - 1 and y == n - 1:
                     return 1
