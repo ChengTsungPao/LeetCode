@@ -1,7 +1,14 @@
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        map = [[1 for _ in range(n)] for _ in range(m)]
-        for i in range(1, m):
-            for j in range(1, n):
-                map[i][j] = map[i-1][j] + map[i][j-1]
-        return map[-1][-1]
+        dp = {}
+        def dfs(x, y):
+            if (x, y) not in dp:
+                if  x >= m or y >= n:
+                    return 0
+                elif x == m - 1 and y == n - 1:
+                    return 1
+                layer = 0
+                layer += dfs(x + 1, y) + dfs(x, y + 1)
+                dp[x, y] = layer
+            return dp[x, y]        
+        return dfs(0, 0)
