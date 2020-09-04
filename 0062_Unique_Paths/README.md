@@ -13,6 +13,6 @@ code2.py:
 code3.py:
 * Runtime: 24 ms, faster than 91.33% of Python3 online submissions for Unique Paths.
 * Memory Usage: 14.1 MB, less than 5.77% of Python3 online submissions for Unique Paths.
->dp
+>bottom up
 
 </br>note : Don't just use the dfs to solve the question !!!
