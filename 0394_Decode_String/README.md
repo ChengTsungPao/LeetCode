@@ -1,4 +1,4 @@
-## Question: hhttps://leetcode.com/problems/decode-string/
+## Question: https://leetcode.com/problems/decode-string/
 
 code1.py:
 * Runtime: 24 ms, faster than 94.79% of Python3 online submissions for Decode String.
