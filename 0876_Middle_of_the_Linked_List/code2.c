@@ -6,7 +6,6 @@
  * };
  */
 
-
 struct ListNode* middleNode(struct ListNode* head){
     int index = 0;
     struct ListNode* temp = head;
