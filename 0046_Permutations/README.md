@@ -19,3 +19,6 @@ code4.py
 * Runtime: 36 ms, faster than 84.84% of Python3 online submissions for Permutations.
 * Memory Usage: 14.2 MB, less than 5.36% of Python3 online submissions for Permutations.
 >Next Permutation
+
+
+</br>note : Testing data can not distinguish between methods. (Testing data is too easy.)
