@@ -3,12 +3,12 @@
 code1.py:
 * Runtime: 44 ms, faster than 25.17% of Python3 online submissions for Permutations.
 * Memory Usage: 14.1 MB, less than 5.36% of Python3 online submissions for Permutations.
->dfs (global variable)
+>dfs
 
 code2.py:
 * Runtime: 44 ms, faster than 30.47% of Python3 online submissions for Permutations.
 * Memory Usage: 14.3 MB, less than 64.08% of Python3 online submissions for Permutations.
->dfs (local variable)
+>dfs + bottom up
 
 code3.py:
 * Runtime: 40 ms, faster than 62.26% of Python3 online submissions for Permutations.
