@@ -8,7 +8,7 @@ code1.py:
 code2.py:
 * Runtime: 44 ms, faster than 30.47% of Python3 online submissions for Permutations.
 * Memory Usage: 14.3 MB, less than 64.08% of Python3 online submissions for Permutations.
->dfs + bottom up
+>dfs (bottom up)
 
 code3.py:
 * Runtime: 40 ms, faster than 62.26% of Python3 online submissions for Permutations.
