@@ -22,7 +22,6 @@ class Solution:
             return Alex + dp[i, j][0], Lee + dp[i, j][1]
 
         Alex, Lee = dfs(0, len(piles) - 1, 0, 0, True)
-        #print(Alex, Lee)
         if Alex > Lee:
             return True
         else:
