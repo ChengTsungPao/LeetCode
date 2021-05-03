@@ -1,24 +1,23 @@
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
+        
         symbol = dividend ^ divisor < 0
-        if dividend == 0: 
-            return 0
-        elif abs(divisor) == 1:
-            mid = abs(dividend)
-        else:
-            dividend, divisor = abs(dividend), abs(divisor)
-            left, right = 0, dividend
-            while left <= right:
-                mid = (left + right) // 2
-                temp = dividend - divisor * mid
-                if temp < 0:
-                    right = mid - 1
-                elif temp >= divisor:
-                    left = mid + 1
-                else:
-                    break
-        val = (1 - 2 * symbol) * mid
-        if -2 ** 31 <= val <= 2 ** 31 - 1:
-            return val
+        operator = 2 ** 31 - 1
+        
+        A, Q, M = 0, abs(dividend), abs(divisor)
+        
+        for _ in range(32):
+            
+            A = ((A & operator) << 1) + (Q > operator)
+            Q =  (Q & operator) << 1
+
+            if A >= M:
+                A -= M
+                Q |= 1
+                
+        Q = (1 - 2 * symbol) * Q
+        
+        if -2 ** 31 <= Q <= 2 ** 31 - 1:
+            return Q
         else:
             return 2 ** 31 - 1

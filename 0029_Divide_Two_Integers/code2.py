@@ -2,18 +2,13 @@ class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
         
         symbol = dividend ^ divisor < 0
-        operator = 2 ** 31 - 1
         
-        A, Q, M = 0, abs(dividend), abs(divisor)
+        A, B, Q = abs(dividend), abs(divisor), 0
         
-        for _ in range(32):
-            
-            A = ((A & operator) << 1) + (Q > operator)
-            Q =  (Q & operator) << 1
-
-            if A >= M:
-                A -= M
-                Q |= 1
+        for i in range(31, -1, -1):
+            if A >= B * (1 << i):
+                A -= B * (1 << i)
+                Q |= 1 << i
                 
         Q = (1 - 2 * symbol) * Q
         
