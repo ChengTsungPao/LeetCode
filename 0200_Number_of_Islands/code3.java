@@ -1,38 +1,26 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        int count = 0;  
-        for(int i=0;i<grid.length;i++){
-            for(int j=0;j<grid[0].length;j++){
-                if(grid[i][j]=='1'){
-                    dfs(grid, i,j);
-                    count++;
-                }
+        int ans = 0;  
+        for(int i = 0; i < grid.length; i++){
+            for(int j = 0; j < grid[0].length; j++){
+                ans += dfs(grid, i, j);
             }            
         }
-        return count;
+        return ans;
     }
     
-    private void dfs(char[][] grid, int x,int y){
-        grid[x][y] = '2';
-        if(x+1<grid.length){
-            if(grid[x+1][y]=='1'){
-                dfs(grid, x+1,y);
-            }
+    private byte dfs(char[][] grid, int i, int j){
+        if(!(0 <= i && i < grid.length && 0 <= j && j < grid[0].length) || grid[i][j] == '0'){
+            return 0;
         }
-        if(y+1<grid[0].length){
-            if(grid[x][y+1]=='1'){
-                dfs(grid, x,y+1);
-            }
-        }
-        if(x-1>=0){
-            if(grid[x-1][y]=='1'){
-                dfs(grid, x-1,y);
-            }
-        }
-        if(y-1>=0){
-            if(grid[x][y-1]=='1'){
-                dfs(grid, x,y-1);
-            }
-        }
+
+        grid[i][j] = '0';
+
+        dfs(grid, i + 1, j);
+        dfs(grid, i, j + 1);
+        dfs(grid, i - 1, j);
+        dfs(grid, i, j - 1);
+        
+        return 1;
     }
 }
