@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 49 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 50 Questions)
 
 0003_Longest_Substring_Without_Repeating_Characters
 * Code1 faster than 17.62%
@@ -62,6 +62,10 @@
 
 0207_Course_Schedule
 * Code1 faster than 17.58%
+* Code2 faster than 15.56%
+
+0210_Course_Schedule_II
+* Code1 faster than 5.60%
 
 0212_Word_Search_II
 * Code1 faster than 10.78%
