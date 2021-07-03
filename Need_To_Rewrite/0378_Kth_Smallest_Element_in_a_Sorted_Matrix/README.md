@@ -2,6 +2,12 @@
 
 # Need to rewrite
 
-code1.c:
-* Runtime: 1220 ms, faster than 6.02% of C online submissions for Kth Smallest Element in a Sorted Matrix.
-* Memory Usage: 8.1 MB, less than 46.99% of C online submissions for Kth Smallest Element in a Sorted Matrix.
+code1.py:
+* Runtime: 532 ms, faster than 5.12% of Python3 online submissions for Kth Smallest Element in a Sorted Matrix.
+* Memory Usage: 20.6 MB, less than 9.91% of Python3 online submissions for Kth Smallest Element in a Sorted Matrix.
+> binary search
+
+code2.py:
+* Runtime: 276 ms, faster than 11.68% of Python3 online submissions for Kth Smallest Element in a Sorted Matrix.
+* Memory Usage: 21.3 MB, less than 6.91% of Python3 online submissions for Kth Smallest Element in a Sorted Matrix.
+> heap
