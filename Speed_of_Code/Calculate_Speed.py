@@ -11,6 +11,7 @@ def get_speed(path, lower, upper):
         result = path.split("../")[-1] + "\n"
 
     count = 1
+    speed = -1
     for line in f.readlines():
         if line.find("Runtime") != -1:
             speed = line.split("faster than ")[-1].split("%")[0]
@@ -20,7 +21,10 @@ def get_speed(path, lower, upper):
 
     f.close()
     
-    return result + "\n"
+    if lower <= float(speed) <= upper:
+        return result + "\n"
+    else:
+        return ""
 
 if __name__ == "__main__":
 
@@ -34,7 +38,7 @@ if __name__ == "__main__":
     allPath = glob("../[0-9]*")
     for path in allPath:
         result = get_speed(path, lower, upper)
-        if result.find("faster than") != -1:
+        if result.find("%") != -1:
             f.write(result)
 
     f.close()
