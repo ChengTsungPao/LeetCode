@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code
+## Faster Than 0 ~ 50 % Code (Total = 38 Questions)
 
 0003_Longest_Substring_Without_Repeating_Characters
 * Code1 faster than 17.62%

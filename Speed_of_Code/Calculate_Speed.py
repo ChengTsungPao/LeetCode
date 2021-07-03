@@ -32,13 +32,16 @@ if __name__ == "__main__":
     upper = 50
 
     f = open("README.md".format(lower, upper), "w")
-
-    f.write("## Faster Than {} ~ {} % Code\n\n".format(lower, upper))
     
     allPath = glob("../[0-9]*")
+    content = ""
+    count = 0
     for path in allPath:
         result = get_speed(path, lower, upper)
         if result.find("%") != -1:
-            f.write(result)
+            content += result
+            count += 1
+    content = "## Faster Than {} ~ {} % Code (Total = {} Questions)\n\n".format(lower, upper, count) + content
+    f.write(content)
 
     f.close()
