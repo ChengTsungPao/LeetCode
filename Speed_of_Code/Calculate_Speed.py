@@ -41,7 +41,7 @@ if __name__ == "__main__":
         if result.find("%") != -1:
             content += result
             count += 1
-    content = "## Faster Than {} ~ {} % Code  (Total = {} Questions)\n\n".format(lower, upper, count) + content
+    content = "## Faster Than {} ~ {} % Code (Total = {} Questions)\n\n".format(lower, upper, count) + content
     f.write(content)
 
     f.close()
