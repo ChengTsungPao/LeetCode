@@ -1,15 +1,16 @@
 class Solution:
     def minCut(self, s: str) -> int:
-        dp = {}
-        def dfs(index):
-            if index not in dp:
-                if index == len(s):
-                    return -1
-                layer = dfs(index + 1) + 1
-                for i in range(index + 1, len(s)):
-                    temp = s[index:i + 1]
-                    if temp == temp[::-1]:
-                        layer = min(layer, dfs(i + 1) + 1)
-                dp[index] = layer
-            return dp[index]
-        return dfs(0)    
+
+        def recur(startindex, memo = {}):
+            if startindex not in memo:
+                if startindex == len(s):
+                    return 0
+                layer = float("inf")
+                for i in range(startindex, len(s)):
+                    sub_str = s[startindex:i + 1]
+                    if sub_str == sub_str[::-1]:
+                        layer = min(layer, recur(i + 1) + 1)
+                memo[startindex] = layer
+            return memo[startindex]
+        
+        return recur(0) - 1   
