@@ -5,14 +5,17 @@ def get_speed(path, lower, upper):
 
     f = open(path + "/README.md", "r")
 
+    lines = f.readlines()
+    url = lines[0].split("Question: ")[-1]
+
     if platform.system() == "Windows":
-        result = path.split("..\\")[-1] + "\n"
+        result = "[{}]".format(path.split("..\\")[-1]) + "({})".format(url) + "\n"
     else:
-        result = path.split("../")[-1] + "\n"
+        result = "[{}]".format(path.split("../")[-1]) + "({})".format(url) + "\n"
 
     count = 1
     speed = -1
-    for line in f.readlines():
+    for line in lines:
         if line.find("Runtime") != -1:
             speed = line.split("faster than ")[-1].split("%")[0]
             if lower <= float(speed) <= upper:
