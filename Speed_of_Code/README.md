@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 49 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 48 Questions)
 
 [0003_Longest_Substring_Without_Repeating_Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/
 )
@@ -24,10 +24,6 @@
 [0044_Wildcard_Matching](https://leetcode.com/problems/wildcard-matching/
 )
 * Code1 faster than 9.46%
-
-[0048_Rotate_Image](https://leetcode.com/problems/rotate-image/
-)
-* Code1 faster than 43.62%
 
 [0049_Group_Anagrams](https://leetcode.com/problems/group-anagrams/
 )
