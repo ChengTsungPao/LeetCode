@@ -1,8 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 47 Questions)
-
-[0003_Longest_Substring_Without_Repeating_Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/
-)
-* Code1 faster than 17.62%
+## Faster Than 0 ~ 50 % Code (Total = 46 Questions)
 
 [0005_Longest_Palindromic_Substring](https://leetcode.com/problems/longest-palindromic-substring/
 )
