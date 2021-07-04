@@ -11,7 +11,7 @@
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
-* Code1 faster than 20.02%
+* Code1 faster than 41.19%
 
 [0015_3Sum](https://leetcode.com/problems/3sum/
 )
