@@ -1,31 +1,28 @@
 class Solution:
     def totalNQueens(self, n: int) -> int:
-        ans = 0
-        if(n==0):
-            return 0
-        elif(n==1):
-            return 1
         
-        def dfs(depth,pos):
-            nonlocal ans
-            finalflag = False
-            for i in range(n):
-                flag = False
-                for q in pos:
-                    if(q%n==i or abs(q//n-depth)==abs(q%n-i)):
-                        flag = True
+        def recur(row, found):
+            
+            if row == n:
+                return 1
+
+            ans = 0
+
+            for col in range(n):
+
+                is_restrict = False
+                for i, j in found:
+                    if col == j or abs(row - i) == abs(col - j):
+                        is_restrict = True
                         break
-                if(flag):
+
+                if is_restrict:
                     continue
-                else:
-                    finalflag = True
-                if(depth + 1 < n):   
-                    dfs(depth+1,pos+[depth*n+i])
-            if(depth==n-1 and finalflag):
-                ans += 1
 
-        pos = []
-        for i in range(n):
-            dfs(1,pos+[0*n+i])
-
-        return ans
+                found.add((row, col))
+                ans += recur(row + 1, found)
+                found.remove((row, col))
+                
+            return ans
+        
+        return recur(0, set())
