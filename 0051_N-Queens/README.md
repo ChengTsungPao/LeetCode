@@ -6,6 +6,6 @@ code1.py:
 > recur
 
 code2.py:
-* Runtime: 68 ms, faster than 60.51% of Python3 online submissions for N-Queens.
-* Memory Usage: 14.9 MB, less than 30.67% of Python3 online submissions for N-Queens.
+* Runtime: 60 ms, faster than 68.67% of Python3 online submissions for N-Queens.
+* Memory Usage: 14.8 MB, less than 52.69% of Python3 online submissions for N-Queens.
 > recur + math

@@ -1,7 +1,7 @@
 class Solution:
     def totalNQueens(self, n: int) -> int:
         
-        # 將坐標軸旋轉45度，觀察row和col是否有訪問過
+        # 將坐標軸旋轉45度，觀察row和col是否有訪問過，藉此來判斷斜的方向是否相衝
         
         def transfer(i, j):
             rotate = complex(i, j) * complex(1, 1)
