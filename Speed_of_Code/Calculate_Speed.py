@@ -18,7 +18,7 @@ def get_speed(path, lower, upper):
     for line in lines:
         if line.find("Runtime") != -1:
             speed = line.split("faster than ")[-1].split("%")[0]
-            if lower <= float(speed) <= upper:
+            if lower <= float(speed) < upper:
                 result += "* Code{} faster than {}%\n".format(count, speed)
             count += 1
 
