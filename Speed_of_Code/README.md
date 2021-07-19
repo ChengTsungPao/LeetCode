@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 46 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 45 Questions)
 
 [0005_Longest_Palindromic_Substring](https://leetcode.com/problems/longest-palindromic-substring/
 )
@@ -133,10 +133,6 @@
 [0901_Online_Stock_Span](https://leetcode.com/problems/online-stock-span/
 )
 * Code1 faster than 5.03%
-
-[1035_Uncrossed_Lines](https://leetcode.com/problems/uncrossed-lines/
-)
-* Code1 faster than 13.83%
 
 [1140_Stone_Game_II](https://leetcode.com/problems/stone-game-ii/
 )
