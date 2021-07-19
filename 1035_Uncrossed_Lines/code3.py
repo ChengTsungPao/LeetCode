@@ -1,7 +1,7 @@
 class Solution:
     def maxUncrossedLines(self, A: List[int], B: List[int]) -> int:
 
-        # dp[i][j] => A[:i] & B[:j] 的 maxUncrossedLines
+        # dp[i][j] => A[:i] 和 B[:j] 的 maxUncrossedLines
         
         dp = [[0 for _ in range(len(B) + 1)]]
         

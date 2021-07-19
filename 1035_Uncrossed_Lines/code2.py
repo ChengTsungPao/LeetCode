@@ -1,7 +1,7 @@
 class Solution:
     def maxUncrossedLines(self, A: List[int], B: List[int]) -> int:
 
-        # dp[i, j] => A[:i + 1] & B[:j + 1] 的 maxUncrossedLines
+        # dp[i, j] => A[:i + 1] 和 B[:j + 1] 的 maxUncrossedLines
         
         dp = collections.defaultdict(int)
         
