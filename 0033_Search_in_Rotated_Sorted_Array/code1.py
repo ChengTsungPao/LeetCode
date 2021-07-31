@@ -1,26 +1,24 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        if(nums == []): return -1
-            
-        left = 0
-        right = len(nums) - 1        
-        while left < right:
-            if(nums[(left + right) // 2] == nums[left]):
-                left = right
-            elif(nums[(left + right) // 2] > nums[left]):
-                left = (left + right) // 2
-            else:
-                right = (left + right) // 2
-        if(right != len(nums)-1 or (right == len(nums)-1 and nums[right] < nums[0])):
-            nums[:len(nums)-right], nums[len(nums)-right:] = nums[right:], nums[:right]
-        else:
-            right = 0
         
-        index = bisect.bisect_left(nums, target)
-        if(index == len(nums) or nums[index] != target):
-            return -1
-        else:
-            if(index - (len(nums) - right) >= 0):
-                return index - (len(nums) - right)
-            else:
-                return index + right
+        def find_peak(nums):
+            left, right = 0, len(nums) - 1
+            while left < right:
+                mid = (left + right) // 2
+                if nums[mid] < nums[left]:
+                    right = mid
+                elif nums[mid] < nums[mid + 1]:
+                    left = mid + 1
+                else:
+                    right = mid
+            return left
+        
+        peakIndex = find_peak(nums)
+
+        if nums[0] > target:
+            index = bisect.bisect_left(nums, target, peakIndex + 1, len(nums))
+        else:    
+            index = bisect.bisect_left(nums, target, 0, peakIndex + 1)
+
+        return index if index < len(nums) and nums[index] == target else -1               
+     
