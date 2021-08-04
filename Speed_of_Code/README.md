@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 45 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 46 Questions)
 
 [0005_Longest_Palindromic_Substring](https://leetcode.com/problems/longest-palindromic-substring/
 )
@@ -186,6 +186,10 @@
 [1510_Stone_Game_IV](https://leetcode.com/problems/stone-game-iv/
 )
 * Code1 faster than 21.35%
+
+[1610_Maximum_Number_of_Visible_Points](https://leetcode.com/problems/maximum-number-of-visible-points/
+)
+* Code1 faster than 23.26%
 
 [1690_Stone_Game_VII](https://leetcode.com/problems/stone-game-vii/
 )
