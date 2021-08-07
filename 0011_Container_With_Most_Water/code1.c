@@ -6,6 +6,7 @@ int maxArea(int* height, int heightSize){
     int ans = 0;
     int i = 0;
     int j = heightSize - 1;
+    
     while(i < j){
         if(height[i] < height[j]){
             if(height[i] * (j - i) > ans)
@@ -17,5 +18,7 @@ int maxArea(int* height, int heightSize){
             j -= 1;
         }
     }
+
     return ans;
+
 }
