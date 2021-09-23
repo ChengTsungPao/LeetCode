@@ -3,7 +3,7 @@ import platform
 
 def get_speed(path, lower, upper):
 
-    f = open(path + "/README.md", "r")
+    f = open(path + "/README.md", "r", encoding="utf-8")
 
     lines = f.readlines()
     url = lines[0].split("Question: ")[-1]

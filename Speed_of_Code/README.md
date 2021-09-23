@@ -1,9 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 46 Questions)
-
-[0005_Longest_Palindromic_Substring](https://leetcode.com/problems/longest-palindromic-substring/
-)
-* Code1 faster than 18.68%
-* Code2 faster than 26.59%
+## Faster Than 0 ~ 50 % Code (Total = 49 Questions)
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
@@ -76,9 +71,18 @@
 )
 * Code1 faster than 10.78%
 
+[0229_Majority_Element_II](https://leetcode.com/problems/majority-element-ii/
+)
+* Code2 faster than 45.20%
+
 [0241_Different_Ways_to_Add_Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/
 )
 * Code1 faster than 28.95%
+
+[0301_Remove_Invalid_Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/
+)
+* Code1 faster than 5.01%
+* Code2 faster than 45.52%
 
 [0307_Range_Sum_Query_Mutable](https://leetcode.com/problems/range-sum-query-mutable/
 )
@@ -118,6 +122,10 @@
 [0678_Valid_Parenthesis_String](https://leetcode.com/problems/valid-parenthesis-string/
 )
 * Code1 faster than 5.91%
+
+[0715_Range_Module](https://leetcode.com/problems/range-module/
+)
+* Code1 faster than 49.14%
 
 [0784_Letter_Case_Permutation](https://leetcode.com/problems/letter-case-permutation/
 )
@@ -192,6 +200,10 @@
 * Code1 faster than 23.26%
 
 [1690_Stone_Game_VII](https://leetcode.com/problems/stone-game-vii/
+)
+* Code1 faster than 16.22%
+
+[1776_Car_Fleet_II](https://leetcode.com/problems/car-fleet-ii/
 )
 * Code1 faster than 16.22%
 
