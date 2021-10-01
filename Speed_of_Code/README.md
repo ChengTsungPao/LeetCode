@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 49 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 48 Questions)
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
@@ -35,10 +35,6 @@
 [0127_Word_Ladder](https://leetcode.com/problems/word-ladder/
 )
 * Code1 faster than 5.01%
-
-[0128_Longest_Consecutive_Sequence](https://leetcode.com/problems/longest-consecutive-sequence/
-)
-* Code1 faster than 48.44%
 
 [0130_Surrounded_Regions](https://leetcode.com/problems/surrounded-regions/
 )
