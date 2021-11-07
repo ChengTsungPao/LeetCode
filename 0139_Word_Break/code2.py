@@ -1,15 +1,20 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        dp = {}
-        def dfs(x,index):
-            if((x,index) not in dp):
-                if(x==len(s)):
-                    return True
-                dp[x,index] = (len(s)-x>=len(wordDict[index]) and wordDict[index]==s[x:x+len(wordDict[index])] 
-                               and dfs(x+len(wordDict[index]),0)) or (index<len(wordDict)-1 and dfs(x,index+1))
-            return dp[x,index]
-                
-        if(wordDict!=[]):
-            return dfs(0,0)       
-        else:
-            return False
+        
+        dp = set()
+        que = collections.deque()
+        for w in wordDict:
+            if(w == s[:len(w)]):
+                dp.add(s[len(w):])
+                que.insert(0, s[len(w):])
+
+        while que:
+            if(que[-1] == ""):
+                return True
+            for w in wordDict:
+                if(que[-1][len(w):] not in dp and w == que[-1][:len(w)]):
+                    dp.add(que[-1][len(w):])
+                    que.insert(0, que[-1][len(w):])
+            que.pop()
+
+        return False
