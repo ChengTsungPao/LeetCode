@@ -8,4 +8,9 @@ code1.py:
 code2.py:
 * Runtime: 32 ms, faster than 92.09% of Python3 online submissions for Word Break.
 * Memory Usage: 13.9 MB, less than 5.55% of Python3 online submissions for Word Break.
-> bfs
+> bfs + dp
+
+code3.py:
+* Runtime: 36 ms, faster than 86.30% of Python3 online submissions for Word Break.
+* Memory Usage: 14.4 MB, less than 70.81% of Python3 online submissions for Word Break.
+> dp
