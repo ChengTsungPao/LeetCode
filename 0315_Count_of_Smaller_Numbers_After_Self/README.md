@@ -6,6 +6,11 @@ code1.py:
 > Binary Search
 
 code2.py:
-* Runtime: 2876 ms, faster than 55.30% of Python3 online submissions for Count of Smaller Numbers After Self.
-* Memory Usage: 34.7 MB, less than 39.21% of Python3 online submissions for Count of Smaller Numbers After Self.
+* Runtime: 2848 ms, faster than 77.87% of Python3 online submissions for Count of Smaller Numbers After Self.
+* Memory Usage: 35.2 MB, less than 54.94% of Python3 online submissions for Count of Smaller Numbers After Self.
+> Binary Indexed Tree
+
+code3.py:
+* Runtime: 2988 ms, faster than 74.57% of Python3 online submissions for Count of Smaller Numbers After Self.
+* Memory Usage: 33 MB, less than 78.20% of Python3 online submissions for Count of Smaller Numbers After Self.
 > Binary Indexed Tree
