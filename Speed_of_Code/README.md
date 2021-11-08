@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 48 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 51 Questions)
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
@@ -20,10 +20,6 @@
 )
 * Code1 faster than 35.02%
 
-[0079_Word_Search](https://leetcode.com/problems/word-search/
-)
-* Code1 faster than 12.20%
-
 [0091_Decode_Ways](https://leetcode.com/problems/decode-ways/
 )
 * Code1 faster than 5.75%
@@ -44,6 +40,10 @@
 )
 * Code1 faster than 6.25%
 * Code2 faster than 41.58%
+
+[0148_Sort_List](https://leetcode.com/problems/sort-list/
+)
+* Code2 faster than 46.24%
 
 [0150_Evaluate_Reverse_Polish_Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/
 )
@@ -67,13 +67,25 @@
 )
 * Code1 faster than 10.78%
 
+[0224_Basic_Calculator](https://leetcode.com/problems/basic-calculator/
+)
+* Code1 faster than 26.77%
+
 [0229_Majority_Element_II](https://leetcode.com/problems/majority-element-ii/
 )
 * Code2 faster than 45.20%
 
+[0239_Sliding_Window_Maximum](https://leetcode.com/problems/sliding-window-maximum/
+)
+* Code3 faster than 30.25%
+
 [0241_Different_Ways_to_Add_Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/
 )
 * Code1 faster than 28.95%
+
+[0282_Expression_Add_Operators](https://leetcode.com/problems/expression-add-operators/
+)
+* Code1 faster than 5.02%
 
 [0301_Remove_Invalid_Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/
 )
