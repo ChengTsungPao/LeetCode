@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 51 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 52 Questions)
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
@@ -149,6 +149,10 @@
 [0901_Online_Stock_Span](https://leetcode.com/problems/online-stock-span/
 )
 * Code1 faster than 5.03%
+
+[0994_Rotting_Oranges](https://leetcode.com/problems/rotting-oranges/
+)
+* Code1 faster than 32.72%
 
 [1140_Stone_Game_II](https://leetcode.com/problems/stone-game-ii/
 )
