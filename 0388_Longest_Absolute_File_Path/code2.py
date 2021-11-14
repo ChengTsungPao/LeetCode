@@ -1,26 +1,24 @@
 class Solution:
     def lengthLongestPath(self, input: str) -> int:
         
-        ans, index, stack, stack_total_length, input = 0, 0, [], 0, "\n" + input
+        def layer(s):
+            level = 0
+            while s[level] == "\t":
+                level += 1                
+            return level, s[level:]
         
-        while index >= 0:
-           
-            findindex = input.find("\n", index + 1 , len(input))
+        ans = 0
+        stack = []
+        for dirname in input.split("\n"):
+            level, dirname = layer(dirname)
             
-            count = 0
-            while input[index + 1 + count] == "\t":
-                count += 1            
-            
-            while stack and stack[-1][1] >= count:
-                stack_total_length -= len(stack[-1][0])
-                stack.pop()
+            if level >= len(stack):
+                stack.append(dirname)
+            else:
+                stack = stack[:level + 1]
+                stack[-1] = dirname
 
-            stack.append((input[index + 1 + count : findindex], count))
-            stack_total_length += len(stack[-1][0]) + (findindex == -1)
-
-            if stack[-1][0].find(".") != -1:
-                ans = max(ans, stack_total_length + len(stack) - 1)
-
-            index = findindex
-                    
+            if stack[-1].find(".") != -1:
+                ans = max(ans, len("/".join(stack)))
+        
         return ans
