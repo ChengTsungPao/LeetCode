@@ -1,27 +1,41 @@
 # Definition for a binary tree node.
 # class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-    def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
-        def dfs(node, _list):
-            if(len(_list) == 0):
-                return None
-            left, right = [], []
-            for i in range(len(_list)):
-                if(_list[i] < node.val):
-                    left.append(_list[i])
-                else:
-                    right.append(_list[i])  
-            if(len(left) >= 1):
-                node.left = TreeNode(left[0])
-                dfs(node.left, left[1:])
-            if(len(right) >= 1):
-                node.right = TreeNode(right[0])
-                dfs(node.right, right[1:])
-        root = TreeNode(preorder[0])
-        dfs(root, preorder[1:])
-        return root
+    def bstFromPreorder(self, preorder: List[int]) -> Optional[TreeNode]:
+        
+        def recur(i, j):
+            nonlocal preorderIndex
+            
+            if i > j:
+                return
+            
+            root_val = preorder[preorderIndex]
+            root = TreeNode(root_val)
+            preorderIndex += 1
+            
+            if i == j:
+                return root
+            
+            nextBiggerIndex = nextBiggerIndexDict.get(root_val, len(preorder))
+
+            root.left = recur(i + 1, nextBiggerIndex - 1)
+            root.right = recur(nextBiggerIndex, j)
+            
+            return root
+        
+        
+        # monotonic stack => find next bigger val index
+        stack, nextBiggerIndexDict = [], {}
+        
+        for i in range(len(preorder)):
+            while stack and stack[-1] < preorder[i]:
+                nextBiggerIndexDict[stack.pop()] = i
+            stack.append(preorder[i])
+        
+        preorderIndex = 0
+        
+        return recur(0, len(preorder) - 1)
