@@ -1,7 +1,7 @@
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         
-        # dp[i][j] => text1[:i] 和 text1[:j] 的 longestCommonSubsequence
+        # dp[i][j] => text1[:i] 和 text2[:j] 的 longestCommonSubsequence
         # dp[i][j] 包含所有的 dp[a < i][b < j] 所以當 text1[i] != text2[j] => dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
         
         dp = [[0] * (len(text2) + 1) for _ in range(len(text1) + 1)]
