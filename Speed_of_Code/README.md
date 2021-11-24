@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 52 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 55 Questions)
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
@@ -83,6 +83,10 @@
 )
 * Code1 faster than 28.95%
 
+[0281_Zigzag_Iterator](https://leetcode.com/problems/zigzag-iterator/
+)
+* Code1 faster than 30.16%
+
 [0282_Expression_Add_Operators](https://leetcode.com/problems/expression-add-operators/
 )
 * Code1 faster than 5.02%
@@ -113,10 +117,19 @@
 )
 * Code1 faster than 38.41%
 
+[0416_Partition_Equal_Subset_Sum](https://leetcode.com/problems/partition-equal-subset-sum/
+)
+* Code3 faster than 5.70%
+* Code4 faster than 10.00%
+
 [0470_Implement_Rand10()_Using_Rand7()](https://leetcode.com/problems/implement-rand10-using-rand7/
 )
 * Code1 faster than 5.55%
 * Code2 faster than 14.56%
+
+[0494_Target_Sum](https://leetcode.com/problems/target-sum/
+)
+* Code3 faster than 5.01%
 
 [0518_Coin_Change_2](https://leetcode.com/problems/coin-change-2/
 )
