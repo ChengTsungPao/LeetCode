@@ -13,8 +13,7 @@ class Solution:
                     
             return j == len(word2)
         
-        constraint_length = 1000
-        dictionary.sort(key = lambda element: (constraint_length - len(element), element))
+        dictionary.sort(key = lambda element: (-len(element), element))
         
         for word in dictionary:
             if compare(s, word):

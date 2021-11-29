@@ -5,5 +5,5 @@ code1.py:
 * Memory Usage: 16.2 MB, less than 7.71% of Python3 online submissions for Longest Word in Dictionary through Deleting.
 
 code2.py:
-* Runtime: 612 ms, faster than 39.34% of Python3 online submissions for Longest Word in Dictionary through Deleting.
-* Memory Usage: 16.7 MB, less than 84.42% of Python3 online submissions for Longest Word in Dictionary through Deleting.
+* Runtime: 600 ms, faster than 42.21% of Python3 online submissions for Longest Word in Dictionary through Deleting.
+* Memory Usage: 16.6 MB, less than 95.03% of Python3 online submissions for Longest Word in Dictionary through Deleting.
