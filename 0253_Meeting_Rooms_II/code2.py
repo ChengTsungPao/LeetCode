@@ -1,29 +1,23 @@
 class Solution:
-    def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
-        '''
-        dp[i][m][n] => 前i個 組成最多m個0和n個1 的最長subset
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         
-        Init:
-            cost = number of 0 or 1
-            score = number of your things
+        # 概念: 一開始依時間排序，若為開始時間加入record，結束時間則踢出record
+        # 注意: intervals仍需要sort，因為若時間相同，結束必須先踢出record
+        
+        ans = 0
+        times = []
+        for index, (start, end) in enumerate(sorted(intervals)):
+            times.append((start, index))
+            times.append((end, index))
             
-            dp[0][m][n] = 0
-        
-        Method:
-            dp[i][m][n] = max(dp[i - 1][m][n], dp[i - 1][m - count_zero][n - count_one] + 1)
-        '''
-        
-        dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(len(strs) + 1)]
-           
-        for i in range(1, len(strs) + 1):
-            count = collections.Counter(strs[i - 1])
-            count_zero, count_one = count["0"], count["1"]
-            
-            for j in range(m + 1):
-                for k in range(n + 1):
-                    if j - count_zero >= 0 and k - count_one >= 0: 
-                        dp[i][j][k] = max(dp[i - 1][j][k], dp[i - 1][j - count_zero][k - count_one] + 1)
-                    else:
-                        dp[i][j][k] = dp[i - 1][j][k]
+        times.sort()
 
-        return dp[-1][-1][-1]
+        record = set()
+        for time, index in times:
+            if index in record:
+                record.remove(index)
+            else:
+                record.add(index)
+            ans = max(ans, len(record))
+            
+        return ans
