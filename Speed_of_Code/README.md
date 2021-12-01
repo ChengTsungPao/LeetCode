@@ -95,7 +95,7 @@
 )
 * Code1 faster than 5.02%
 
-[0298_Binary_Tree_Longest_Consecutive_Sequence](## https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/
+[0298_Binary_Tree_Longest_Consecutive_Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/
 )
 * Code1 faster than 33.08%
 
@@ -182,7 +182,7 @@
 )
 * Code1 faster than 31.08%
 
-[0809_Expressive_Words](## https://leetcode.com/problems/expressive-words/
+[0809_Expressive_Words](https://leetcode.com/problems/expressive-words/
 )
 * Code1 faster than 42.97%
 
