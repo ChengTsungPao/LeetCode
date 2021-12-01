@@ -1,4 +1,4 @@
-## Faster Than 0 ~ 50 % Code (Total = 55 Questions)
+## Faster Than 0 ~ 50 % Code (Total = 68 Questions)
 
 [0012_Integer_to_Roman](https://leetcode.com/problems/integer-to-roman/
 )
@@ -54,6 +54,10 @@
 )
 * Code1 faster than 31.77%
 
+[0159_Longest_Substring_with_At_Most_Two_Distinct_Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+)
+* Code1 faster than 45.90%
+
 [0207_Course_Schedule](https://leetcode.com/problems/course-schedule/
 )
 * Code1 faster than 17.58%
@@ -91,6 +95,10 @@
 )
 * Code1 faster than 5.02%
 
+[0298_Binary_Tree_Longest_Consecutive_Sequence](## https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/
+)
+* Code1 faster than 33.08%
+
 [0301_Remove_Invalid_Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/
 )
 * Code1 faster than 5.01%
@@ -99,6 +107,15 @@
 [0307_Range_Sum_Query_Mutable](https://leetcode.com/problems/range-sum-query-mutable/
 )
 * Code2 faster than 12.63%
+
+[0322_Coin_Change](https://leetcode.com/problems/coin-change/
+)
+* Code1 faster than 37.94%
+* Code3 faster than 17.26%
+
+[0340_Longest_Substring_with_At_Most_K_Distinct_Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+)
+* Code1 faster than 10.82%
 
 [0378_Kth_Smallest_Element_in_a_Sorted_Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 )
@@ -127,6 +144,11 @@
 * Code1 faster than 5.55%
 * Code2 faster than 14.56%
 
+[0474_Ones_and_Zeroes](## https://leetcode.com/problems/ones-and-zeroes/
+)
+* Code1 faster than 12.95%
+* Code2 faster than 18.95%
+
 [0494_Target_Sum](https://leetcode.com/problems/target-sum/
 )
 * Code3 faster than 5.01%
@@ -135,6 +157,10 @@
 )
 * Code1 faster than 5.02%
 * Code2 faster than 44.84%
+
+[0524_Longest_Word_in_Dictionary_through_Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
+)
+* Code2 faster than 42.21%
 
 [0646_Maximum_Length_of_Pair_Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/
 )
@@ -148,9 +174,17 @@
 )
 * Code1 faster than 49.14%
 
+[0737_Sentence_Similarity_II](https://leetcode.com/problems/sentence-similarity-ii/
+)
+* Code1 faster than 45.90%
+
 [0784_Letter_Case_Permutation](https://leetcode.com/problems/letter-case-permutation/
 )
 * Code1 faster than 31.08%
+
+[0809_Expressive_Words](## https://leetcode.com/problems/expressive-words/
+)
+* Code1 faster than 42.97%
 
 [0877_Stone_Game](https://leetcode.com/problems/stone-game/
 )
@@ -163,9 +197,21 @@
 )
 * Code1 faster than 5.03%
 
+[0911_Online_Election](https://leetcode.com/problems/online-election/
+)
+* Code1 faster than 13.99%
+
+[0939_Minimum_Area_Rectangle](https://leetcode.com/problems/minimum-area-rectangle/
+)
+* Code1 faster than 17.46%
+
 [0994_Rotting_Oranges](https://leetcode.com/problems/rotting-oranges/
 )
 * Code1 faster than 32.72%
+
+[1110_Delete_Nodes_And_Return_Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/
+)
+* Code1 faster than 46.28%
 
 [1140_Stone_Game_II](https://leetcode.com/problems/stone-game-ii/
 )
@@ -188,6 +234,10 @@
 )
 * Code1 faster than 7.88%
 
+[1423_Maximum_Points_You_Can_Obtain_from_Cards](## https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+)
+* Code1 faster than 23.95%
+
 [1424_Diagonal_Traverse_II](https://leetcode.com/problems/diagonal-traverse-ii/
 )
 * Code1 faster than 6.08%
@@ -195,6 +245,10 @@
 [1437_Check_If_All_1's Are_at_Least_Length_K_Places_Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/
 )
 * Code1 faster than 16.38%
+
+[1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
+)
+* Code2 faster than 36.78%
 
 [1442_Count_Triplets_That_Can_Form_Two_Arrays_of_Equal_XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/
 )
@@ -207,6 +261,7 @@
 [1449_Form_Largest_Integer_With_Digits_That_Add_up_to_Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/
 )
 * Code1 faster than 26.29%
+* Code2 faster than 10.71%
 
 [1452_People_Whose_List_of_Favorite_Companies_Is_Not_a_Subset_of_Another_List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/
 )
