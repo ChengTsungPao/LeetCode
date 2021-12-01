@@ -144,7 +144,7 @@
 * Code1 faster than 5.55%
 * Code2 faster than 14.56%
 
-[0474_Ones_and_Zeroes](## https://leetcode.com/problems/ones-and-zeroes/
+[0474_Ones_and_Zeroes](https://leetcode.com/problems/ones-and-zeroes/
 )
 * Code1 faster than 12.95%
 * Code2 faster than 18.95%
