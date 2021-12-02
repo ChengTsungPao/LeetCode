@@ -4,11 +4,11 @@ class Solution:
         dp[i][j] => 到 (i, j) 的最小總合
         
         Init:
-            dp[0][i] = sum(dp[0][0 ~ i])
-            dp[j][0] = sum(dp[0 ~ j][0])
+            dp[0][i] = sum(grid[0][0 ~ i])
+            dp[j][0] = sum(grid[0 ~ j][0])
         
         Method:
-            dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + grid[i][]j
+            dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + grid[i][j]
         '''
         
         for i in range(1, len(grid)):
