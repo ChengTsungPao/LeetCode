@@ -13,4 +13,4 @@ code2.py:
 code3.py:
 * Runtime: 68 ms, faster than 79.06% of Python3 online submissions for Evaluate Reverse Polish Notation.
 * Memory Usage: 14.6 MB, less than 42.77% of Python3 online submissions for Evaluate Reverse Polish Notation.
->stack (More clear)
+>stack (More clear code)
