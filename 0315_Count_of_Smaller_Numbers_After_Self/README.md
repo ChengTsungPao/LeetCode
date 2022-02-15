@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 2988 ms, faster than 74.57% of Python3 online submissions for Count of Smaller Numbers After Self.
 * Memory Usage: 33 MB, less than 78.20% of Python3 online submissions for Count of Smaller Numbers After Self.
 > Binary Indexed Tree
+
+code4.py:
+* Runtime: 9652 ms, faster than 5.02% of Python3 online submissions for Count of Smaller Numbers After Self.
+* Memory Usage: 44.9 MB, less than 12.63% of Python3 online submissions for Count of Smaller Numbers After Self.
+> Segment Tree

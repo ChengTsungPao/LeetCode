@@ -22,7 +22,8 @@ class Solution:
     def countSmaller(self, nums: List[int]) -> List[int]:
 
         # time complexity: O(nlogn)
-        # space complexity: O(maxNum - minNum + 1)
+        # space complexity: O(n)   
+        # n = maxNum - minNum + 1
         
         # 概念: 將Binary_Indexed_Tree的delta都設為1，來統計數量
         # 方法: 由右而左update，在quary的時候只會有該index右邊的數字參與，且只有較小的數字會被加起來 (非rank直接用數值大小)
