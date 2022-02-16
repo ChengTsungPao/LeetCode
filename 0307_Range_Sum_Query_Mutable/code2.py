@@ -4,9 +4,8 @@ class Node:
         self.right = None
         self.sumRange = (leftIndex, rightIndex)
         self.val = val
-          
+            
 class SegmentTree:
-
     def __init__(self, nums):
         self.nums = nums
         self.node = self.build(0, len(self.nums) - 1)
@@ -21,7 +20,7 @@ class SegmentTree:
         node.val = node.left.val + node.right.val
         return node
 
-    def update(self, node, index, val):
+    def update(self, index, val):
 
         def updateTree(node, index, val):
             if node == None:
@@ -32,31 +31,37 @@ class SegmentTree:
                 updateTree(node.right, index, val)
             node.val += val - self.nums[index]
 
-        updateTree(node, index, val)
-
+        updateTree(self.node, index, val)
         self.nums[index] = val
 
-    def query(self, node, leftIndex, rightIndex):
-        if leftIndex == node.sumRange[0] and rightIndex == node.sumRange[1]:
-            return node.val
-        index = (node.sumRange[0] + node.sumRange[1]) // 2
-        if rightIndex <= index:
-            return self.query(node.left, leftIndex, rightIndex)
-        elif leftIndex > index:
-            return self.query(node.right, leftIndex, rightIndex)
-        else:
-            return self.query(node.left, leftIndex, index) + self.query(node.right, index + 1, rightIndex)  
-
+    def quary(self, leftIndex, rightIndex):
+        
+        def _quary(node, leftIndex, rightIndex):
+            if not node:
+                return 0
+            elif leftIndex == node.sumRange[0] and rightIndex == node.sumRange[1]:
+                return node.val
+            index = (node.sumRange[0] + node.sumRange[1]) // 2
+            if rightIndex <= index:
+                return _quary(node.left, leftIndex, rightIndex)
+            elif leftIndex > index:
+                return _quary(node.right, leftIndex, rightIndex)
+            else:
+                return _quary(node.left, leftIndex, index) + _quary(node.right, index + 1, rightIndex)  
+            
+        return _quary(self.node, leftIndex, rightIndex)
+        
+        
 class NumArray:
-
     def __init__(self, nums: List[int]):
         self.ST = SegmentTree(nums)
 
     def update(self, index: int, val: int) -> None:
-        self.ST.update(self.ST.node, index, val)
+        self.ST.update(index, val)
+
+    def sumRange(self, left: int, right: int) -> int:
+        return self.ST.quary(left, right)
         
-    def sumRange(self, left: int, right: int) -> int:    
-        return self.ST.query(self.ST.node, left, right)
 
 
 # Your NumArray object will be instantiated and called as such:

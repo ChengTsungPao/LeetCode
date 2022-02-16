@@ -6,6 +6,6 @@ code1.py:
 > Binary Indexed Tree
 
 code2.py:
-* Runtime: 3384 ms, faster than 12.63% of Python3 online submissions for Range Sum Query - Mutable.
-* Memory Usage: 58.3 MB, less than 5.02% of Python3 online submissions for Range Sum Query - Mutable.
+* Runtime: 3356 ms, faster than 38.51% of Python3 online submissions for Range Sum Query - Mutable.
+* Memory Usage: 56.5 MB, less than 5.06% of Python3 online submissions for Range Sum Query - Mutable.
 > Segment Tree
