@@ -10,7 +10,7 @@ class Solution:
         ans = []
         def inorder(node):
             if(node == None): 
-                return
+                return None
             inorder(node.left)
             ans.append(node.val)
             inorder(node.right)
