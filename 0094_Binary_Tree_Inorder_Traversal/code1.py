@@ -9,7 +9,8 @@ class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         ans = []
         def inorder(node):
-            if(node==None): return
+            if(node == None): 
+                return
             inorder(node.left)
             ans.append(node.val)
             inorder(node.right)
