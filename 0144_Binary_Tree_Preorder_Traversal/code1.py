@@ -11,8 +11,7 @@ class Solution:
         def preorder(node):
             if(node == None):
                 return None
-            else:
-                ans.append(node.val)
+            ans.append(node.val)
             preorder(node.left)
             preorder(node.right)
         preorder(root)
