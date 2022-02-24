@@ -14,6 +14,5 @@ class Solution:
             inorder(node.left)
             ans.append(node.val)
             inorder(node.right)
-        
         inorder(root)
         return ans
