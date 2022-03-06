@@ -1,20 +1,26 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        if len(prerequisites) <= 1: return True
+        
         graph = collections.defaultdict(list)
-        for pos in prerequisites:
-            graph[pos[0]] += [pos[1]]
-        course = set(range(numCourses))
-        def dfs(node, preivous):
-            nonlocal course
-            course -= set([node])
-            if node in preivous:
+        for course, nextCourse in prerequisites:
+            graph[course].append(nextCourse)
+            
+        def dfs(course, curFound, found):
+            if course in curFound:
                 return True
-            for pos in graph[node]:
-                if dfs(pos, preivous | set([node])):
+            
+            found.add(course)
+            for nextCourse in graph[course]:
+                if dfs(nextCourse, curFound | set([course]), found):
                     return True
-        while course:
-            tmp = list(course)[0]
-            if dfs(tmp, set()):
+            
+        
+        found = set()
+        for startCourse in range(numCourses):
+            if startCourse in found:
+                continue
+            
+            if dfs(startCourse, set(), found):
                 return False
+            
         return True
