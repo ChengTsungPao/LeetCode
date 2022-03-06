@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 304 ms, faster than 15.56% of Python3 online submissions for Course Schedule.
 * Memory Usage: 15.4 MB, less than 93.90% of Python3 online submissions for Course Schedule.
 > bfs
+
+code3.py:
+* Runtime: 104 ms, faster than 48.12% of Python3 online submissions for Course Schedule.
+* Memory Usage: 15.6 MB, less than 70.33% of Python3 online submissions for Course Schedule.
+> topology sort
