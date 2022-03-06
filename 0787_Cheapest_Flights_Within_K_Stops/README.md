@@ -8,4 +8,9 @@ code1.py:
 code2.py:
 * Runtime: 152 ms, faster than 60.72% of Python3 online submissions for Cheapest Flights Within K Stops.
 * Memory Usage: 15.3 MB, less than 71.65% of Python3 online submissions for Cheapest Flights Within K Stops.
-> Dijkstra
+> dijkstra
+
+code3.py:
+* Runtime: 388 ms, faster than 18.71% of Python3 online submissions for Cheapest Flights Within K Stops.
+* Memory Usage: 15.1 MB, less than 97.75% of Python3 online submissions for Cheapest Flights Within K Stops.
+> bellman ford
