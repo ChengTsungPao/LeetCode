@@ -16,7 +16,6 @@ class Solution:
                 count *= 2
                 
             return ans
-        
 
         ans = 1
         digitVal = 1
