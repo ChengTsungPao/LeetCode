@@ -19,6 +19,7 @@ class Solution:
 
         ans = 1
         digitVal = 1
+
         n_ = abs(n)
         while n_ > 0:
             if n_ % 2 == 1:
