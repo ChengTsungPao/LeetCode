@@ -4,7 +4,6 @@ class Solution:
         # 2**14 = 2**8 x 2**4 x 2**2 (14 = 0b1110) 
         
         def pow2(x, n):
-            
             if n == 0:
                 return 1
             elif n == 1:
@@ -18,6 +17,7 @@ class Solution:
                 
             return ans
         
+
         ans = 1
         digitVal = 1
         
