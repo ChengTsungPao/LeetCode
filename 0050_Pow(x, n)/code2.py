@@ -27,4 +27,4 @@ class Solution:
             n_ //= 2
             digitVal *= 2
         
-        return  ans if n >= 0 else 1 / ans
+        return ans if n >= 0 else 1 / ans
