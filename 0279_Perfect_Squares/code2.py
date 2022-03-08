@@ -2,12 +2,17 @@ class Solution:
     def numSquares(self, n: int) -> int:
         dp = set([n])
         que = collections.deque()
-        que.appendleft((n, 1))
+        que.appendleft((n, 1, float("inf")))
+        
         while que:
-            data = que.pop()
-            for i in range(int(data[0] ** 0.5), 0, -1):
-                if data[0] - i ** 2 == 0:
-                    return data[1]
-                if data[0] - i ** 2 not in dp:
-                    que.appendleft((data[0] - i ** 2, data[1] + 1))
-                    dp.add(data[0] - i ** 2)
+            num, step, index = que.pop()
+            
+            for i in range(min(int(num ** 0.5), index), 0, -1):
+                if num - i ** 2 == 0:
+                    return step
+                
+                if num - i ** 2 not in dp:
+                    que.appendleft((num - i ** 2, step + 1, i))
+                    dp.add(num - i ** 2)
+                    
+        return -1
