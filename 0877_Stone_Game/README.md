@@ -8,12 +8,12 @@ code1.py:
 code2.py:
 * Runtime: 732 ms, faster than 13.95% of Python3 online submissions for Stone Game.
 * Memory Usage: 125.3 MB, less than 13.75% of Python3 online submissions for Stone Game.
-> recur + memo (bottom up)
+> recur + memo (min-max)
 
 code3.py:
 * Runtime: 672 ms, faster than 19.98% of Python3 online submissions for Stone Game.
 * Memory Usage: 39.1 MB, less than 30.84% of Python3 online submissions for Stone Game.
-> recur + memo max
+> recur + memo (max)
 
 code4.py:
 * Runtime: 461 ms, faster than 46.17% of Python3 online submissions for Stone Game.
