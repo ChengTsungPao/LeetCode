@@ -1,19 +1,36 @@
 class Solution:
     def stoneGameII(self, piles: List[int]) -> int:
         
-        def recur(piles, index, M, who, memo = {}):
-            key = (index, M, who)
-            if key not in memo:
-                if len(piles) <= index:
-                    return 0
+        n = len(piles)
+
+        memo = {}
+        def recur(index, M, who):
+            if (index, M, who) not in memo:
+
+                if index >= n:
+                    return 0, 0
+
                 if who:
-                    memo[key] = -float("inf")
-                    for i in range(1, 2 * M + 1):
-                        memo[key] = max(memo[key], recur(piles, index + i, max(M, i), not who, memo) + sum(piles[index : index + i]))
+                    ret = 0, 0
+                    score = -float("inf")
+                    for x in range(1, 2 * M + 1):
+                        Alex, Bob = recur(index + x, max(M, x), not who)
+                        Alex += sum(piles[index: index + x])
+                        if Alex - Bob > score:
+                            ret = Alex, Bob
+                            score = Alex - Bob
                 else:
-                    memo[key] = float("inf")
-                    for i in range(1, 2 * M + 1):
-                        memo[key] = min(memo[key], recur(piles, index + i, max(M, i), not who, memo))
-            return memo[key] 
-        
-        return recur(piles, 0, 1, True)
+                    ret = 0, 0
+                    score = float("inf")
+                    for x in range(1, 2 * M + 1):
+                        Alex, Bob = recur(index + x, max(M, x), not who)
+                        Bob += sum(piles[index: index + x])
+                        if Alex - Bob < score:
+                            ret = Alex, Bob
+                            score = Alex - Bob
+
+                memo[index, M, who] = ret
+
+            return memo[index, M, who]
+
+        return recur(0, 1, True)[0]
