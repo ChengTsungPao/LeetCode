@@ -8,4 +8,9 @@ code2.py:
 * Runtime: 60 ms, faster than 93.48% of Python3 online submissions for Maximum Subarray.
 * Memory Usage: 14.6 MB, less than 5.69% of Python3 online submissions for Maximum Subarray.
 
+code3.py:
+* Runtime: 777 ms, faster than 82.67% of Python3 online submissions for Maximum Subarray.
+* Memory Usage: 27.8 MB, less than 86.38% of Python3 online submissions for Maximum Subarray.
+> kadane's algorithm
+
 </br>note : code2.py is the same meaning of code1.java
