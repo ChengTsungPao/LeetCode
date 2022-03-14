@@ -23,4 +23,9 @@ code4.py:
 code5.py:
 * Runtime: 5480 ms, faster than 22.75% of Python3 online submissions for Count of Smaller Numbers After Self.
 * Memory Usage: 52.8 MB, less than 5.25% of Python3 online submissions for Count of Smaller Numbers After Self.
-> merge sort
+> Merge Sort
+
+code6.py:
+* Runtime: 4805 ms, faster than 34.89% of Python3 online submissions for Count of Smaller Numbers After Self.
+* Memory Usage: 53.1 MB, less than 5.25% of Python3 online submissions for Count of Smaller Numbers After Self.
+> Merge Sort

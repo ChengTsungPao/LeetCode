@@ -17,7 +17,30 @@ class Solution:
         mid = left + (right - left) // 2
         leftArr = self.mergeSort(left, mid)
         rightArr = self.mergeSort(mid + 1, right)
+        self.count(self.ans, leftArr, rightArr)
         return self.merge(leftArr, rightArr)
+    
+    
+    def count(self, ans, leftArr, rightArr):
+        
+        m = len(leftArr)
+        n = len(rightArr)
+        
+        i = j = rightCounter = 0
+        while i < m and j < n:
+            leftNum, leftIndex = leftArr[i]
+            rightNum, rightIndex = rightArr[j]
+            if leftNum > rightNum:
+                rightCounter += 1
+                j += 1
+            else:
+                ans[leftIndex] += rightCounter
+                i += 1
+                
+        while i < m:
+            leftNum, leftIndex = leftArr[i]
+            ans[leftIndex] += rightCounter
+            i += 1
         
         
     def merge(self, leftArr, rightArr):
@@ -26,22 +49,19 @@ class Solution:
         n = len(rightArr)
         
         arr = []
-        i = j = rightCounter = 0
+        i = j = 0
         while i < m and j < n:
             leftNum, leftIndex = leftArr[i]
             rightNum, rightIndex = rightArr[j]
             if leftNum > rightNum:
-                rightCounter += 1
                 arr.append((rightNum, rightIndex))
                 j += 1
             else:
-                self.ans[leftIndex] += rightCounter
                 arr.append((leftNum, leftIndex))
                 i += 1
 
         while i < m:
             leftNum, leftIndex = leftArr[i]
-            self.ans[leftIndex] += rightCounter
             arr.append((leftNum, leftIndex))
             i += 1
 
