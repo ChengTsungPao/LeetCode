@@ -21,8 +21,10 @@ class Solution:
         
         
     def merge(self, leftArr, rightArr):
+
         arr = []
         i = j = rightCounter = 0
+
         while i < len(leftArr) and j < len(rightArr):
             leftNum, leftIndex = leftArr[i]
             rightNum, rightIndex = rightArr[j]
