@@ -19,3 +19,8 @@ code4.py:
 * Runtime: 9652 ms, faster than 5.02% of Python3 online submissions for Count of Smaller Numbers After Self.
 * Memory Usage: 44.9 MB, less than 12.63% of Python3 online submissions for Count of Smaller Numbers After Self.
 > Segment Tree
+
+code5.py:
+* Runtime: 5480 ms, faster than 22.75% of Python3 online submissions for Count of Smaller Numbers After Self.
+* Memory Usage: 52.8 MB, less than 5.25% of Python3 online submissions for Count of Smaller Numbers After Self.
+> merge sort
