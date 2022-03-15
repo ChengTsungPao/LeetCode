@@ -54,7 +54,7 @@ class Solution:
         
         arr = []
         i = j = 0
-        while i < m and j < len(rightArr):
+        while i < m and j < n:
             leftNum, leftIndex = leftArr[i]
             rightNum, rightIndex = rightArr[j]
             if leftNum > rightNum:
@@ -69,7 +69,7 @@ class Solution:
             arr.append((leftNum, leftIndex))
             i += 1
   
-        while j < len(rightArr):
+        while j < n:
             rightNum, rightIndex = rightArr[j]
             arr.append((rightNum, rightIndex))
             j += 1
