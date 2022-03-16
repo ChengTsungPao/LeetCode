@@ -6,7 +6,7 @@ class Solution:
             while left < right:
                 mid = (left + right) // 2
                 if nums[mid] < nums[left]:
-                    right = mid
+                    right = mid - 1
                 elif nums[mid] < nums[mid + 1]:
                     left = mid + 1
                 else:
@@ -20,5 +20,5 @@ class Solution:
         else:    
             index = bisect.bisect_left(nums, target, 0, peakIndex + 1)
 
-        return index if index < len(nums) and nums[index] == target else -1               
+        return index if index < len(nums) and nums[index] == target else -1                  
      
