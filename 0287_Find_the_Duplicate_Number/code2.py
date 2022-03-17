@@ -1,7 +1,7 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         
-        while True :         
+        while True:         
             index = nums[0]
             if nums[index] == "#":
                 return nums[0]
