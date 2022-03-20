@@ -1,8 +1,8 @@
 ## Question: https://leetcode.com/problems/increasing-triplet-subsequence/
 
 code1.py:
-Runtime: 644 ms, faster than 58.69% of Python3 online submissions for Increasing Triplet Subsequence.
-Memory Usage: 24.5 MB, less than 96.33% of Python3 online submissions for Increasing Triplet Subsequence.
+* Runtime: 644 ms, faster than 58.69% of Python3 online submissions for Increasing Triplet Subsequence.
+* Memory Usage: 24.5 MB, less than 96.33% of Python3 online submissions for Increasing Triplet Subsequence.
 > Patient Sort (LIS)
 
 code2.py:
