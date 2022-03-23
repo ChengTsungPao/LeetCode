@@ -18,3 +18,13 @@ code4.py
 * Runtime: 4264 ms, faster than 10.00% of Python3 online submissions for Partition Equal Subset Sum.
 * Memory Usage: 14.6 MB, less than 71.75% of Python3 online submissions for Partition Equal Subset Sum.
 > dp (knapsack problem)
+
+code5.py
+* Runtime: 2351 ms, faster than 36.46% of Python3 online submissions for Partition Equal Subset Sum.
+* Memory Usage: 15.9 MB, less than 54.83% of Python3 online submissions for Partition Equal Subset Sum.
+> recur + memo
+
+code6.py
+* Runtime: 673 ms, faster than 74.05% of Python3 online submissions for Partition Equal Subset Sum.
+* Memory Usage: 29.1 MB, less than 48.43% of Python3 online submissions for Partition Equal Subset Sum.
+> dp
