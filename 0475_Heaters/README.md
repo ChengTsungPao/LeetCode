@@ -1,4 +1,4 @@
-## Question: https://leetcode.com/problems/design-snake-game/
+## Question: https://leetcode.com/problems/heaters/
 
 code1.py:
 * Runtime: 731 ms, faster than 18.06% of Python3 online submissions for Heaters.
