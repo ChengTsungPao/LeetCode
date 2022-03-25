@@ -2,8 +2,8 @@ class Solution:
     def diffWaysToCompute(self, expression: str) -> List[int]:
         
         n = len(expression)
-        
         dp = [[0] * n for _ in range(n)]
+
         for i in range(n - 1, -1, -1):
             for j in range(n):
                 if expression[i: j + 1].isdigit():
