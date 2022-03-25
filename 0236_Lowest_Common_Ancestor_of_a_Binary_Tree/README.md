@@ -11,6 +11,6 @@ code2.py:
 > recur
 
 code3.py:
-Runtime: 90 ms, faster than 64.79% of Python3 online submissions for Lowest Common Ancestor of a Binary Tree.
-Memory Usage: 25.9 MB, less than 84.32% of Python3 online submissions for Lowest Common Ancestor of a Binary Tree.
+* Runtime: 90 ms, faster than 64.79% of Python3 online submissions for Lowest Common Ancestor of a Binary Tree.
+* Memory Usage: 25.9 MB, less than 84.32% of Python3 online submissions for Lowest Common Ancestor of a Binary Tree.
 > recur
