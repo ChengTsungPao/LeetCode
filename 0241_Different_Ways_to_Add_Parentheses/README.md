@@ -14,3 +14,13 @@ code3.py:
 * Runtime: 69 ms, faster than 17.57% of Python3 online submissions for Different Ways to Add Parentheses.
 * Memory Usage: 14.1 MB, less than 98.91% of Python3 online submissions for Different Ways to Add Parentheses.
 > divide and conquer
+
+code4.py:
+* Runtime: 71 ms, faster than 23.76% of Python3 online submissions for Different Ways to Add Parentheses.
+* Memory Usage: 14.2 MB, less than 9.35% of Python3 online submissions for Different Ways to Add Parentheses.
+> divide and conquer
+
+code5.py:
+* Runtime: 52 ms, faster than 52.53% of Python3 online submissions for Different Ways to Add Parentheses.
+* Memory Usage: 14 MB, less than 60.27% of Python3 online submissions for Different Ways to Add Parentheses.
+> dp
