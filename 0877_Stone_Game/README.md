@@ -24,3 +24,8 @@ code5.py:
 * Runtime: 472 ms, faster than 40.33% of Python3 online submissions for Stone Game.
 * Memory Usage: 39.7 MB, less than 29.40% of Python3 online submissions for Stone Game.
 > dp
+
+code6.py:
+* Runtime: 642 ms, faster than 35.67% of Python3 online submissions for Stone Game.
+* Memory Usage: 19.6 MB, less than 50.20% of Python3 online submissions for Stone Game.
+> dp
