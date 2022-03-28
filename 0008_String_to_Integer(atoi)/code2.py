@@ -11,7 +11,6 @@ class Solution:
         # 取得數值部分
         isdigit = False
         valueString = ""
-        
         for ch in s:
             if isdigit == False and (ch == "-" or ch == "+"):
                 valueString += ch
