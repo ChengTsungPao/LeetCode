@@ -1,5 +1,7 @@
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
+
+	# 出現在字母種類中，尋找最小且合法的開頭 (smallest lexicographical)
         
         status = {}
         for i in range(len(s)):
