@@ -7,7 +7,6 @@ public:
         }
 
         int dp[5001][501];
-        std::sort(coins.begin(), coins.end());
 
         for(int i = 0; i < coins.size(); i++){
             dp[0][i] = 1;

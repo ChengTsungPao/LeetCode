@@ -5,17 +5,13 @@ class Solution:
         def recur(amount, index):
             
             if (amount, index) not in memo:
-
+                
                 if amount == 0:
                     return 1
-                elif amount < 0:
+                elif amount < 0 or index >= len(coins):
                     return 0
-                
-                count = 0
-                for i in range(index, len(coins)):
-                    count += recur(amount - coins[i], i)
                     
-                memo[amount, index] = count
+                memo[amount, index] = recur(amount - coins[index], index) + recur(amount, index + 1)
                 
             return memo[amount, index]
         
