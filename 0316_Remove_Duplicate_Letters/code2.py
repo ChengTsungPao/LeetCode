@@ -1,21 +1,23 @@
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
         
-        status = {}
-        for i in range(len(s)):
-            status[s[i]] = i
-            
-        stack = [] 
-        visited = set()
+        # 將大的字母往高位數推 (smallest lexicographical)
         
+        lastIndex = {}
+        for i in range(len(s)):
+            lastIndex[s[i]] = i
+        
+        stack = []
+        visited = set()
         for index in range(len(s)):
             ch = s[index]
             if ch in visited:
                 continue
             
-            while stack and ch < stack[-1] and index < status[stack[-1]]:
+            while stack and ch < stack[-1] and lastIndex[stack[-1]] > index:
                 visited.remove(stack.pop())
-            stack.append(ch)
+                
             visited.add(ch)
+            stack.append(ch)
             
         return "".join(stack)
