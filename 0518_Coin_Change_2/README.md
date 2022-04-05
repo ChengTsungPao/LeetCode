@@ -10,8 +10,8 @@ code2.py:
 > recur + memo
 
 code3.cpp:
-Runtime: 24 ms, faster than 44.84% of C++ online submissions for Coin Change 2.
-Memory Usage: 17.8 MB, less than 40.74% of C++ online submissions for Coin Change 2.
+* Runtime: 24 ms, faster than 44.84% of C++ online submissions for Coin Change 2.
+* Memory Usage: 17.8 MB, less than 40.74% of C++ online submissions for Coin Change 2.
 > dp
 
 code4.py:
