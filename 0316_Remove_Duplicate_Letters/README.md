@@ -1,4 +1,4 @@
-## Question: https://leetcode.com/problems/increasing-triplet-subsequence/
+## Question: https://leetcode.com/problems/remove-duplicate-letters/
 
 code1.py:
 * Runtime: 382 ms, faster than 5.08% of Python3 online submissions for Remove Duplicate Letters.
