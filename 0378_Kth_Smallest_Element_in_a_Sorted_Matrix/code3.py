@@ -5,9 +5,9 @@ class Solution:
         n = len(matrix[0])
         
         heap = []
-        index = [0] * n
+        index = [0] * m
         
-        for i in range(len(matrix)):
+        for i in range(m):
             heapq.heappush(heap, (matrix[i][0], i))
         
         for _ in range(k):
