@@ -9,9 +9,9 @@ class Solution:
             
         
         memo = {}
-        def recur(i, j, who):
+        def recur(i, j):
             
-            key = str(stones[i: j + 1]) + str(who)
+            key = str(stones[i: j + 1])
             
             if key not in memo:
             
@@ -21,14 +21,8 @@ class Solution:
                 left = preSum[j + 1] - preSum[i + 1]
                 right = preSum[j] - preSum[i]
 
-                if who:
-                    ans = max(recur(i + 1, j, not who) + left, recur(i, j - 1, not who) + right)
-
-                else:
-                    ans = min(recur(i + 1, j, not who) - left, recur(i, j - 1, not who) - right)
-                    
-                memo[key] = ans
+                memo[key] = max(left - recur(i + 1, j), right - recur(i, j - 1))
                 
             return memo[key]
         
-        return recur(0, n - 1, True)
+        return recur(0, n - 1)
