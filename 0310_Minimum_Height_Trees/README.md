@@ -8,3 +8,8 @@ code2.py:
 * Runtime: 228 ms, faster than 89.33% of Python3 online submissions for Minimum Height Trees.
 * Memory Usage: 19.2 MB, less than 25.60% of Python3 online submissions for Minimum Height Trees.
 > Topological Sorting
+
+code3.py:
+* Runtime: 554 ms, faster than 83.37% of Python3 online submissions for Minimum Height Trees.
+* Memory Usage: 27.1 MB, less than 14.39% of Python3 online submissions for Minimum Height Trees.
+> Topological Sorting
