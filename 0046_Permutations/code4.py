@@ -1,23 +1,26 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        ans = [copy.copy(nums)]
-        while 1 == 1:
-            i = len(nums) - 1
-            while i > 0:
-                if(nums[i] > nums[i - 1]):
-                    break  
+        
+        n = len(nums)
+        ans = []
+        
+        while not ans or ans[0] != nums:
+            ans.append(nums.copy())
+            
+            i = n - 1
+            while i - 1 >= 0 and nums[i - 1] > nums[i]:
                 i -= 1
-            if(i == 0):
+            i -= 1
+            
+            if i < 0:
                 nums.reverse()
-            else:
-                j = i + 1
-                while j < len(nums) and nums[i - 1] < nums[j]:
-                    j += 1
+                continue
+            
+            j = n - 1
+            while j - 1 >= 0 and nums[i] >= nums[j]:
                 j -= 1
-                nums[i - 1], nums[j] = nums[j], nums[i - 1]
-                nums[i:] = reversed(nums[i:])
-            if(ans[0] != nums):
-                ans.append(copy.copy(nums))
-            else:
-                break
+
+            nums[i], nums[j] = nums[j], nums[i]
+            nums[i + 1:] = reversed(nums[i + 1:])
+
         return ans
