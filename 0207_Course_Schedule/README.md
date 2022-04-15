@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 104 ms, faster than 48.12% of Python3 online submissions for Course Schedule.
 * Memory Usage: 15.6 MB, less than 70.33% of Python3 online submissions for Course Schedule.
 > topology sort
+
+code4.py:
+* Runtime: 91 ms, faster than 99.21% of Python3 online submissions for Course Schedule.
+* Memory Usage: 15.5 MB, less than 73.72% of Python3 online submissions for Course Schedule.
+> topology sort
