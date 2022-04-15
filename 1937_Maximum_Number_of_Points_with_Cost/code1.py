@@ -1,16 +1,16 @@
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
         
-        dp = [points[0].copy()]
-        m, n = len(points), len(points[0])
+        m = len(points)
+        n = len(points[0])
+        
+        dp = [[0] * n for _ in range(m)]
+        for j in range(n):
+            dp[0][j] = points[0][j]
         
         for i in range(1, m):
-            
-            dp.append([])
             for j in range(n):
-                
-                dp[i].append(0)
-                for k in range(max(0, j - points[i][j]), min(n, j + points[i][j] + 1)):
+                for k in range(n):
                     dp[i][j] = max(dp[i][j], dp[i - 1][k] + points[i][j] - abs(j - k))
-
-        return max(dp[-1])
+                    
+        return max(dp[m - 1])
