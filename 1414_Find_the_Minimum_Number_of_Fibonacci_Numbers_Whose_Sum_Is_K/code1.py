@@ -1,24 +1,24 @@
 class Solution:
     def findMinFibonacciNumbers(self, k: int) -> int:
-        data = [1, 1]
-        answer = 0
-        while 1 == 1:
-            next = data[-1] + data[-2]
-            if(next > k):
-                break
-            else:
-                data.append(next)
-        data.reverse()
-        def dfs(ans, k):
-            nonlocal data
-            nonlocal answer
-            if(k < 0):
-                return
-            elif(k == 0):
-                answer = len(ans)
+        
+        dp = [1, 1]
+        while dp[-1] + dp[-2] <= k:
+            dp.append(dp[-1] + dp[-2])
+        n = len(dp)
+
+        ans = float("inf")
+        def recur(k, index, step):
+            nonlocal ans
+            
+            if k == 0:
+                ans = min(ans, step)
                 return True
-            for n in data:
-                if(dfs(ans + [n], k - n)):
+            elif k < 0:
+                return
+
+            for i in range(index, -1, -1):
+                if recur(k - dp[i], i, step + 1):
                     return True
-        dfs([], k)
-        return answer
+                
+        recur(k, n - 1, 0)
+        return ans
