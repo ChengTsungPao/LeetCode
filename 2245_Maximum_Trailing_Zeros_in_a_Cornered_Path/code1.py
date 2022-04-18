@@ -11,7 +11,6 @@ class Solution:
                 num //= 5
             return count
         
-        
         def addCount(count1, count2):
             return [count1[0] + count2[0], count1[1] + count2[1]]
         
@@ -19,12 +18,14 @@ class Solution:
         m = len(grid)
         n = len(grid[0])
         
+        # count two and five
         mid = [[[0, 0] for _ in range(n)] for _ in range(m)]
         for i in range(m):
             for j in range(n):   
                 mid[i][j] = countTwoFive(grid[i][j])
                 
-        
+                
+        # prefixSum and suffixSum
         left = [[[0, 0] for _ in range(n)] for _ in range(m)]
         right = [[[0, 0] for _ in range(n)] for _ in range(m)]
         
@@ -39,7 +40,6 @@ class Solution:
                 right[i][j] = count
                 count = addCount(count, mid[i][j])
                 
-      
         up = [[[0, 0] for _ in range(n)] for _ in range(m)]
         down = [[[0, 0] for _ in range(n)] for _ in range(m)]
         
@@ -54,7 +54,8 @@ class Solution:
                 down[i][j] = count
                 count = addCount(count, mid[i][j])
                 
-                
+        
+        # calculate answer
         ans = 0
         for i in range(m):
             for j in range(n):
