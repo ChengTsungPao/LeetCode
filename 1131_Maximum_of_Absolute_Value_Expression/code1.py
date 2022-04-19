@@ -24,13 +24,13 @@ class Solution:
         n = len(arr1)
         m = len(c)
         
-        # 計算所有的f(i)
+        # 計算每一種f(i)的最大值
         f = [-float("inf")] * m
         for k, (c1, c2, c3) in enumerate(c):
             for i in range(n):
                 f[k] = max(f[k], c1 * arr1[i] + c2 * arr2[i] + c3 * i)
                 
-        # 計算所有的g(j)        
+        # 計算每一種g(j)的最大值        
         g = [-float("inf")] * m
         for k, (c1, c2, c3) in enumerate(c):
             for j in range(n):
@@ -41,4 +41,4 @@ class Solution:
         for k in range(m):
             ans = max(ans, f[k] + g[k])
                 
-        return ans 
+        return ans
