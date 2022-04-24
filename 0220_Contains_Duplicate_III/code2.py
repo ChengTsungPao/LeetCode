@@ -1,32 +1,24 @@
 class Solution:
     def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
+        from sortedcontainers import SortedList
         
-        # 只要同一個bucket裡面有兩個元素代表存在abs(nums[i] - nums[j]) <= t，所以bucket只需存一個元素
+        if k == 0:
+            return False
         
-        bucket = {}
-        t = t + 1
+        tree = SortedList()
+        tree.add(nums[0])
         
         i = 0
-        j = 0
-        while j < len(nums):
-            num = nums[j]
-            bucket_number = num // t
-            
-            if bucket_number in bucket:
+        j = 1
+        while j < len(nums):                
+            if tree.bisect_left(nums[j] - t) != tree.bisect_right(nums[j] + t):
                 return True
             
-            if bucket_number - 1 in bucket and abs(num - bucket[bucket_number - 1]) <= t - 1:
-                return True
-            
-            if bucket_number + 1 in bucket and abs(bucket[bucket_number + 1] - num) <= t - 1:
-                return True
-            
-            bucket[bucket_number] = num
-            
+            tree.add(nums[j])    
             j += 1
             
             if j - i > k:
-                del bucket[nums[i] // t]
+                tree.remove(nums[i])
                 i += 1
         
         return False
