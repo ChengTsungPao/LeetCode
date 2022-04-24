@@ -7,19 +7,20 @@ class Solution:
             preSum[i] = preSum[i - 1] + stones[i - 1]
         
         memo = {}
-        def recur(index):
+        def recur(index, who):
             
-            if index not in memo:
-            
-                if index == n - 1:
-                    return 0
-
-                ans = -float("inf")
-                for i in range(index + 1, n):
-                    ans = max(ans, preSum[i + 1] - recur(i))
-
-                memo[index] = ans if abs(ans) != float("inf") else 0
+            if (index, who) not in memo:
                 
-            return memo[index]
+                if index == n - 2:
+                    return preSum[index + 2] if who else -preSum[index + 2]
+                
+                if who:
+                    ans = max(recur(index + 1, who), recur(index + 1, not who) + preSum[index + 2])
+                else:
+                    ans = min(recur(index + 1, who), recur(index + 1, not who) - preSum[index + 2])
+
+                memo[index, who] = ans
+                
+            return memo[index, who]
         
-        return recur(0)
+        return recur(0, True)

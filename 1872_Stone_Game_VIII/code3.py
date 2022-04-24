@@ -5,14 +5,21 @@ class Solution:
         preSum = [0] * (n + 1)
         for i in range(1, n + 1):
             preSum[i] = preSum[i - 1] + stones[i - 1]
+        
+        memo = {}
+        def recur(index):
             
-        dp = [0] * n
-        for i in range(n - 2, -1, -1):
+            if index not in memo:
             
-            ans = -float("inf")
-            for j in range(i + 1, n):
-                ans = max(ans, preSum[j + 1] - dp[j])
+                if index == n - 1:
+                    return 0
+
+                ans = -float("inf")
+                for i in range(index + 1, n):
+                    ans = max(ans, preSum[i + 1] - recur(i))
+
+                memo[index] = ans if abs(ans) != float("inf") else 0
                 
-            dp[i] = ans if ans != -float("inf") else 0   
-            
-        return dp[0]
+            return memo[index]
+        
+        return recur(0)
