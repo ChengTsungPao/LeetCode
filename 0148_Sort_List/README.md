@@ -8,3 +8,8 @@ code2.py:
 * Runtime: 504 ms, faster than 46.24% of Python3 online submissions for Sort List.
 * Memory Usage: 30.2 MB, less than 38.50% of Python3 online submissions for Sort List.
 > merge sort
+
+code3.py:
+* Runtime: 983 ms, faster than 5.02% of Python3 online submissions for Sort List.
+* Memory Usage: 30.3 MB, less than 24.35% of Python3 online submissions for Sort List.
+> quick sort
