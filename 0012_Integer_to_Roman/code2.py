@@ -7,6 +7,7 @@ class Solution:
         base = 1
         while num > 0:
             n = num % 10
+            
             if n == 9:
                 ans = table[1 * base] + table[10 * base] + ans
             elif n >= 5:
@@ -15,6 +16,7 @@ class Solution:
                 ans = table[1 * base] + table[5 * base] + ans
             elif n > 0:
                 ans = n * table[1 * base] + ans
+                
             num //= 10
             base *= 10
 
