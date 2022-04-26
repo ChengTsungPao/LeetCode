@@ -25,7 +25,7 @@ class Solution(object):
 
         left = dummyHead.next
         cur = dummyHead.next
-        while cur != tail:
+        while id(cur) != id(tail):
             if cur.val < pivot:
                 left.val, cur.val = cur.val, left.val
                 left = left.next
@@ -33,7 +33,7 @@ class Solution(object):
                 
         right = left
         cur = left
-        while cur != tail:
+        while id(cur) != id(tail):
             if cur.val == pivot:
                 right.val, cur.val = cur.val, right.val
                 right = right.next
@@ -45,7 +45,7 @@ class Solution(object):
         node = dummyHead.next
         count = 1
         randomNode = None
-        while node != dummyTail:
+        while id(node) != id(dummyTail):
             if random.random() < 1 / count:
                 randomNode = node
             count += 1
@@ -55,7 +55,7 @@ class Solution(object):
     def getTailNode(self, dummyHead, dummyTail):
         node = dummyHead.next
         tailNode = None
-        while node != dummyTail:
+        while id(node) != id(dummyTail):
             tailNode = node
             node = node.next
-        return tailNode        
+        return tailNode
