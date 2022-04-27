@@ -15,7 +15,7 @@ class Solution:
                 A -= M
                 Q |= 1
                 
-        Q = (1 - 2 * symbol) * Q
+        Q = -Q if symbol else Q
         
         if -2 ** 31 <= Q <= 2 ** 31 - 1:
             return Q
