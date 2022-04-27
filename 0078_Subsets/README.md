@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 46 ms, faster than 53.06% of Python3 online submissions for Subsets.
 * Memory Usage: 14.1 MB, less than 35.58% of Python3 online submissions for Subsets.
 > recur
+
+code3.py:
+* Runtime: 46 ms, faster than 52.92% of Python3 online submissions for Subsets.
+* Memory Usage: 14.2 MB, less than 35.20% of Python3 online submissions for Subsets.
+> dp
