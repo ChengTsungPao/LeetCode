@@ -16,6 +16,6 @@ code3.py:
 > BST + dp (SortList)
 
 code4.py:
-* Runtime: 457 ms, faster than 52.27% of Python3 online submissions for Odd Even Jump.
-* Memory Usage: 18.7 MB, less than 74.76% of Python3 online submissions for Odd Even Jump.
+* Runtime: 374 ms, faster than 73.16% of Python3 online submissions for Odd Even Jump.
+* Memory Usage: 18.6 MB, less than 74.76% of Python3 online submissions for Odd Even Jump.
 > monotonic stack + dp
