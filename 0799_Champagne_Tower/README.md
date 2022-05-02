@@ -10,7 +10,7 @@ code2.py:
 * Memory Usage: 16.2 MB, less than 9.22% of Python3 online submissions for Champagne Tower.
 > recur + memo
 
-code2.py:
+code3.py:
 * Runtime: 223 ms, faster than 28.60% of Python3 online submissions for Champagne Tower.
 * Memory Usage: 16.2 MB, less than 5.34% of Python3 online submissions for Champagne Tower.
 > recur + memo
