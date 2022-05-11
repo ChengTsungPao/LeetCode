@@ -8,3 +8,8 @@ code2.py:
 * Runtime: 72 ms, faster than 99.53% of Python3 online submissions for Merge Intervals.
 * Memory Usage: 16.2 MB, less than 11.18% of Python3 online submissions for Merge Intervals.
 > stack
+
+code3.py:
+* Runtime: 366 ms, faster than 5.04% of Python3 online submissions for Merge Intervals.
+* Memory Usage: 18.7 MB, less than 33.33% of Python3 online submissions for Merge Intervals.
+> binary search
