@@ -1,20 +1,24 @@
 # Definition for a binary tree node.
 # class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
-        ans = []
-        def preorder(node, index):
-            if(node == None):
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        
+        def dfs(root, level):
+            if not root:
                 return None
-            elif(len(ans)-1 < index):
+            
+            if level >= len(ans):
                 ans.append([])
-            ans[index].append(node.val)
-            preorder(node.left, index + 1)
-            preorder(node.right, index + 1)
-        preorder(root, 0)
+            ans[level].append(root.val)
+            
+            dfs(root.left, level + 1)
+            dfs(root.right, level + 1)
+        
+        ans = []
+        dfs(root, 0)
+        
         return ans
