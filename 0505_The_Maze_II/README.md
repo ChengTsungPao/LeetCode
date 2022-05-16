@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 404 ms, faster than 38.20% of Python3 online submissions for The Maze II.
 * Memory Usage: 15.1 MB, less than 18.67% of Python3 online submissions for The Maze II.
 > heap
+
+code4.py:
+* Runtime: 468 ms, faster than 34.60% of Python3 online submissions for The Maze II.
+* Memory Usage: 14.7 MB, less than 56.60% of Python3 online submissions for The Maze II.
+> dijkstra
