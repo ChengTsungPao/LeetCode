@@ -1,4 +1,3 @@
-# 阿寶
 class disjoint_set:
     def __init__(self):
         self.parent = {}
