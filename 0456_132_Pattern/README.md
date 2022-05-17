@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 418 ms, faster than 63.59% of Python3 online submissions for 132 Pattern.
 * Memory Usage: 32 MB, less than 68.89% of Python3 online submissions for 132 Pattern.
 > Monotonic Stack
+
+code3.py:
+* Runtime: 439 ms, faster than 56.76% of Python3 online submissions for 132 Pattern.
+* Memory Usage: 32.1 MB, less than 35.44% of Python3 online submissions for 132 Pattern.
+> Monotonic Stack
