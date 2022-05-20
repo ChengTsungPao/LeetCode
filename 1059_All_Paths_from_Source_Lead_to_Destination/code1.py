@@ -5,7 +5,6 @@ class Solution:
         for node, nextNode in edges:
             graph[node].append(nextNode)
             
-            
         if graph[destination]:
             return False
         
