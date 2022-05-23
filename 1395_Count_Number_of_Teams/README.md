@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 2435 ms, faster than 11.44% of Python3 online submissions for Count Number of Teams.
 * Memory Usage: 14.3 MB, less than 17.71% of Python3 online submissions for Count Number of Teams.
 > dp
+
+code3.py:
+* Runtime: 149 ms, faster than 95.87% of Python3 online submissions for Count Number of Teams.
+* Memory Usage: 14.6 MB, less than 9.09% of Python3 online submissions for Count Number of Teams.
+> bst
