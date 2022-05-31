@@ -2,28 +2,29 @@ class Solution:
     def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
         
         graph = collections.defaultdict(list)
-        for (u, v), prob in zip(edges, succProb):
-            graph[u].append((prob, v))
-            graph[v].append((prob, u))
+        for (node, nextNode), prob in zip(edges, succProb):
+            graph[node].append((nextNode, prob))
+            graph[nextNode].append((node, prob))
+            
         
-        ans = 0
-        probs = {}
         heap = [(-1, start)]
+        visited = set()
         
         while heap:
-            curProb, node = heapq.heappop(heap)
-            curProb *= -1
-
-            if node in probs:
+            prob, node = heapq.heappop(heap)
+            
+            if node in visited:
                 continue
-                
+            
             if node == end:
-                return curProb
+                return -prob
             
-            probs[node] = curProb
+            visited.add(node)
             
-            for prob, nextNode in graph[node]:
-                if nextNode not in probs:
-                    heapq.heappush(heap, (-curProb * prob, nextNode))
-         
-        return ans
+            for nextNode, nextProb in graph[node]:
+                if nextNode in visited:
+                    continue
+                    
+                heapq.heappush(heap, (-abs(prob * nextProb), nextNode))
+                
+        return 0
