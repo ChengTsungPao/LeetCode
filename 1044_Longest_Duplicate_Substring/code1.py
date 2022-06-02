@@ -3,9 +3,9 @@ class Solution:
         
         n = len(s)
         
-        cacheValue = [1] * n
+        powCache = [1] * n
         for i in range(1, n):
-            cacheValue[i] = 26 * cacheValue[i - 1]
+            powCache[i] = 26 * powCache[i - 1]
         
         def condition(length):
             if length == 0:
@@ -19,7 +19,7 @@ class Solution:
                     return True, s[i - length + 1: i + 1]
                 if i >= length - 1:
                     cache.add(k)
-                    k -= (ord(s[i - length + 1]) - 97) * cacheValue[length - 1]
+                    k -= (ord(s[i - length + 1]) - 97) * powCache[length - 1]
                     
             return False, ""
         
