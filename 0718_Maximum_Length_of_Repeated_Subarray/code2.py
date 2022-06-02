@@ -1,34 +1,30 @@
 class Solution:
     def findLength(self, nums1: List[int], nums2: List[int]) -> int:
         
-        n = len(nums1)
-        m = len(nums2)
+        def getCache(length, nums):
+            k = 0
+            cache = set()
+            for i in range(len(nums)):
+                k = 101 * k + nums[i]
+                if i >= length - 1:
+                    cache.add(k)
+                    k -= nums[i - length + 1] * 101 ** (length - 1)
+            return cache
         
         def condition(length):
             if length == 0:
                 return True
             
-            k = 0
-            cache1 = set()
-            for i in range(n):
-                k = 101 * k + nums1[i]
-                if i >= length - 1:
-                    cache1.add(k)
-                    k -= nums1[i - length + 1] * 101 ** (length - 1)
-                    
-            k = 0
-            cache2 = set()
-            for j in range(m):
-                k = 101 * k + nums2[j]
-                if j >= length - 1:
-                    cache2.add(k)
-                    k -= nums2[j - length + 1] * 101 ** (length - 1)
-                    
+            cache1 = getCache(length, nums1)
+            cache2 = getCache(length, nums2)                    
             return len(cache1 & cache2) > 0
         
         
+        m = len(nums1)
+        n = len(nums2)
+        
         left = 0
-        right = min(n, m) + 1
+        right = min(m, n) + 1
         while left < right:
             mid = left + (right - left) // 2
             if condition(mid):
