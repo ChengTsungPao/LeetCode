@@ -1,7 +1,8 @@
 ## Question: https://leetcode.com/problems/longest-duplicate-substring/
 
 code1.py:
-* Time Limit Exceeded
+* Runtime: 2651 ms, faster than 59.10% of Python3 online submissions for Longest Duplicate Substring.
+* Memory Usage: 19.9 MB, less than 59.97% of Python3 online submissions for Longest Duplicate Substring.
 > binary search + rolling hash
 
 code2.py:

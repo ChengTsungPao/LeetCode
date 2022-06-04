@@ -2,10 +2,12 @@ class Solution:
     def longestDupSubstring(self, s: str) -> str:
         
         n = len(s)
+        MOD = 2 ** 63 - 1
         
         powCache = [1] * n
         for i in range(1, n):
             powCache[i] = 26 * powCache[i - 1]
+            powCache[i] %= MOD
         
         def condition(length):
             if length == 0:
@@ -20,6 +22,7 @@ class Solution:
                 if i >= length - 1:
                     cache.add(k)
                     k -= (ord(s[i - length + 1]) - 97) * powCache[length - 1]
+                k %= MOD
                     
             return False, ""
         
