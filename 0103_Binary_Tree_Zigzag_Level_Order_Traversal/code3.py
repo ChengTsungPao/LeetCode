@@ -13,30 +13,30 @@ class Solution:
 
         ans = []
         level = 0
-        deque = collections.deque([root])
-
-        while deque:
+        stack = [root]
+        
+        while stack:
             
-            newDeque = collections.deque()            
-            while deque:
-                node = deque.pop()
+            newStack = []
+            while stack:
+                node = stack.pop()
                 
-                if level % 2 == 0:
-                    if node.left:
-                        newDeque.append(node.left)
-                    if node.right:
-                        newDeque.append(node.right)
-                elif level % 2 == 1:
-                    if node.right:
-                        newDeque.append(node.right) 
-                    if node.left:
-                        newDeque.append(node.left)
-                        
-                if len(ans) <= level:
+                if level >= len(ans):
                     ans.append([])
                 ans[level].append(node.val)
                 
+                if level % 2 == 0:
+                    if node.left:
+                        newStack.append(node.left)
+                    if node.right:
+                        newStack.append(node.right)
+                else:
+                    if node.right:
+                        newStack.append(node.right)
+                    if node.left:
+                        newStack.append(node.left)
+                        
             level += 1
-            deque = newDeque.copy()
+            stack = newStack
 
         return ans
