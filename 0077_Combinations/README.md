@@ -29,3 +29,8 @@ code6.py:
 * Runtime: 9368 ms, faster than 5.03% of Python3 online submissions for Combinations.
 * Memory Usage: 358.8 MB, less than 5.39% of Python3 online submissions for Combinations.
 > dp (subset)
+
+code7.py:
+* Runtime: 1404 ms, faster than 5.03% of Python3 online submissions for Combinations.
+* Memory Usage: 182.4 MB, less than 5.39% of Python3 online submissions for Combinations.
+> dp (subset)
