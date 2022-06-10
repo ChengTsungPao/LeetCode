@@ -1,15 +1,21 @@
 ## Question: https://leetcode.com/problems/super-ugly-number/
 
 code1.py:
-* Memory Limit Exceeded
+* Runtime: 952 ms, faster than 72.13% of Python3 online submissions for Super Ugly Number.
+* Memory Usage: 96.8 MB, less than 15.37% of Python3 online submissions for Super Ugly Number.
 > heap
 
 code2.py:
-* Runtime: 2390 ms, faster than 77.56% of Python3 online submissions for Super Ugly Number.
-* Memory Usage: 54.1 MB, less than 47.69% of Python3 online submissions for Super Ugly Number.
+* Runtime: 301 ms, faster than 95.49% of Python3 online submissions for Super Ugly Number.
+* Memory Usage: 17.9 MB, less than 67.83% of Python3 online submissions for Super Ugly Number.
 > heap
 
 code3.py:
-* Runtime: 6419 ms, faster than 20.42% of Python3 online submissions for Super Ugly Number.
-* Memory Usage: 53.9 MB, less than 70.42% of Python3 online submissions for Super Ugly Number.
+* Runtime: 420 ms, faster than 86.68% of Python3 online submissions for Super Ugly Number.
+* Memory Usage: 17.8 MB, less than 80.74% of Python3 online submissions for Super Ugly Number.
+> heap
+
+code4.py:
+* Runtime: 569 ms, faster than 81.15% of Python3 online submissions for Super Ugly Number.
+* Memory Usage: 17.7 MB, less than 96.72% of Python3 online submissions for Super Ugly Number.
 > heap
