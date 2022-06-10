@@ -17,7 +17,6 @@ class Solution:
             for i in range(times):
                 self.buffer.append(buf4[i])
             
-                
         for i in range(n):
             s = self.buffer.popleft() if self.buffer else ""
             buf.append(s)
