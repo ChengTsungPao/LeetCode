@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 65 ms, faster than 22.69% of Python3 online submissions for Flatten Binary Tree to Linked List.
 * Memory Usage: 15.1 MB, less than 86.41% of Python3 online submissions for Flatten Binary Tree to Linked List.
 > Morris
+
+code3.py:
+* Runtime: 66 ms, faster than 21.75% of Python3 online submissions for Flatten Binary Tree to Linked List.
+* Memory Usage: 15.2 MB, less than 86.39% of Python3 online submissions for Flatten Binary Tree to Linked List.
+> Morris
