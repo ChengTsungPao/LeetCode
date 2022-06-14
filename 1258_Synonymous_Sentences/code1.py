@@ -2,12 +2,14 @@ class disjoint_set:
     def __init__(self):
         self.parent = {}
         self.weight = {}
+        self.children = set()
         
     def build(self, node):
         if node not in self.parent:
             self.parent[node] = node
             self.weight[node] = 1
-            
+            self.children.add(node)
+    
     def findParent(self, node):
         if self.parent[node] == node:
             return node
@@ -28,42 +30,37 @@ class disjoint_set:
         else:
             self.parent[p1] = p2
             self.weight[p2] += 1
-            
+
 class Solution:
     def generateSentences(self, synonyms: List[List[str]], text: str) -> List[str]:
         
-        # 建立word之間的關係
         DS = disjoint_set()
+        
+        text = text.split(" ")
+        for word in text:
+            DS.build(word)
+        
         for word1, word2 in synonyms:
             DS.build(word1)
             DS.build(word2)
             DS.union(word1, word2)
+            
+        group = collections.defaultdict(list)
+        for word in DS.children:
+            p = DS.findParent(word)
+            group[p].append(word)
         
-        # 相同word放進同一個list
-        wordDict = collections.defaultdict(list)
-        for word in DS.parent.keys():
-            wordDict[DS.findParent(word)].append(word)
+        n = len(text)
         
-        # 找出所有相同的text
-        text = text.split(" ")
         def recur(index):
-            if index >= len(text):
+            if index >= n:
                 return [""]
             
             ans = []
-            if text[index] not in DS.parent:
+            for changeWord in group[DS.findParent(text[index])]:
                 for ret in recur(index + 1):
-                    if ret == "":
-                        ans.append(text[index])
-                    else:
-                        ans.append(text[index] + " " + ret)
-            else:
-                for changeWord in wordDict[DS.findParent(text[index])]:
-                    for ret in recur(index + 1):
-                        if ret == "":
-                            ans.append(changeWord)
-                        else:
-                            ans.append(changeWord + " " + ret) 
+                    ans.append(changeWord + " " * (index < n - 1) + ret)
+                        
             return ans
         
         return sorted(recur(0))
