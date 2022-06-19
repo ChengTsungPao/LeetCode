@@ -2,8 +2,8 @@ class Solution:
     def countSmaller(self, nums: List[int]) -> List[int]:
         from sortedcontainers import SortedList
         
-        # Time: O(nlogn)
-        # Space: O(n)
+        # time complexity: O(nlogn)
+        # space complexity: O(n)
         
         n = len(nums)
         bst = SortedList()

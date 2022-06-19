@@ -1,8 +1,8 @@
 class Solution:
     def countSmaller(self, nums: List[int]) -> List[int]:
         
-        # Time: O(n^2)
-        # Space: O(n)
+        # time complexity: O(n^2)
+        # space complexity: O(n)
         
         n = len(nums)
         

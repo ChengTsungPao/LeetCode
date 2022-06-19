@@ -1,10 +1,11 @@
 class Solution:
     def countSmaller(self, nums: List[int]) -> List[int]:
         
-        '''
-        概念: 找大於i的index，且滿足nums[i] > nums[j]
-        想法: 當nums[i] > nums[j]且nums[k] >= nums[i]，必定滿足nums[k] > nums[j]
-        '''
+        # time complexity: O(nlogn)
+        # space complexity: O(n)  
+
+        # 概念: 找大於i的index，且滿足nums[i] > nums[j]
+        # 想法: 當nums[i] > nums[j]且nums[k] >= nums[i]，必定滿足nums[k] > nums[j]
         
         n = len(nums)
         self.ans = [0] * n
