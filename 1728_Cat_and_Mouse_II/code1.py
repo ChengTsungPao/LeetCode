@@ -10,7 +10,6 @@ class Solution:
                         x, y = i + c1 * k, j + c2 * k
                         if not (0 <= x < m and 0 <= y < n) or grid[x][y] == "#":
                             break
-                            
                         position.append((mousePos, (x, y), CATTURN))
             else:
                 i, j = mousePos
@@ -19,11 +18,9 @@ class Solution:
                         x, y = i + c1 * k, j + c2 * k
                         if not (0 <= x < m and 0 <= y < n) or grid[x][y] == "#":
                             break
-                            
                         position.append(((x, y), catPos, MOUSETURN))
             return position        
 
-        
         def allChildrenWin(mousePos, catPos, turn):
             if turn == MOUSETURN:
                 i, j = mousePos
@@ -32,7 +29,6 @@ class Solution:
                         x, y = i + c1 * k, j + c2 * k
                         if not (0 <= x < m and 0 <= y < n) or grid[x][y] == "#":
                             break
-
                         if result[(x, y), catPos, CATTURN] != CATWIN:
                             return False
             else:
@@ -42,11 +38,9 @@ class Solution:
                         x, y = i + c1 * k, j + c2 * k
                         if not (0 <= x < m and 0 <= y < n) or grid[x][y] == "#":
                             break
-                            
                         if result[mousePos, (x, y), MOUSETURN] != MOUSEWIN:
                             return False
             return True
-        
         
         m = len(grid)
         n = len(grid[0])
