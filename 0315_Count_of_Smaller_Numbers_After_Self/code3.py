@@ -22,27 +22,24 @@ class Solution:
     def countSmaller(self, nums: List[int]) -> List[int]:
 
         # time complexity: O(nlogn)
-        # space complexity: O(n)   
-        # n = maxNum - minNum + 1
+        # space complexity: O(n)
         
         # 概念: 將Binary_Indexed_Tree的delta都設為1，來統計數量
-        # 方法: 由右而左update，在quary的時候只會有該index右邊的數字參與，且只有較小的數字會被加起來 (非rank直接用數值大小)
-        # 注意: 但須注意不能quary與自己大小相同的數字 (nums[i] - 1)
+        # 方法: 由右而左update，在quary的時候只會有該index右邊的數字參與，且只有較小的數字(rank)會被加起來 (因為有sort)
+        # 注意: 但須注意不能quary與自己大小相同的數字 (rank[nums[i]] - 1)
         
-        # 比起另一個方法少了一個sort，速度會較快，但較耗空間，且無法處理有小數點的情況
+        # 比起另一個方法多了一個sort，速度會較慢，但較省空間，且能處理有小數點的情況
         
-        _max = -float("inf")
-        _min = float("inf")
-        for num in nums:
-            _max = max(_max, num)
-            _min = min(_min, num)
+        rank = {}
+        sorted_nums = sorted(set(nums))
+        for i in range(len(sorted_nums)):
+            rank[sorted_nums[i]] = i + 1
         
-        BIT = Binary_Indexed_Tree(_max - _min + 1)
+        BIT = Binary_Indexed_Tree(len(sorted_nums))
         
         ans = []
         for i in range(len(nums) - 1, -1, -1):
-            num = nums[i] - _min + 1
-            ans.append(BIT.quary(num - 1))
-            BIT.update(num, 1)
+            ans.append(BIT.quary(rank[nums[i]] - 1))
+            BIT.update(rank[nums[i]], 1)
             
         return ans[::-1]
