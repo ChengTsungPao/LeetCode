@@ -8,3 +8,8 @@ code2.py:
 * Runtime: 80 ms, faster than 97.73% of Python3 online submissions for Median of Two Sorted Arrays.
 * Memory Usage: 14.5 MB, less than 54.02% of Python3 online submissions for Median of Two Sorted Arrays.
 > binary search
+
+code3.py:
+* Runtime: 118 ms, faster than 69.36% of Python3 online submissions for Median of Two Sorted Arrays.
+* Memory Usage: 14.4 MB, less than 6.02% of Python3 online submissions for Median of Two Sorted Arrays.
+> divide and conquer
