@@ -30,4 +30,4 @@ class Solution:
         if length % 2 == 1:
             return findkthSmallestNum(nums1, nums2, length // 2)
         else:
-            return (findkthSmallestNum(nums1, nums2, length // 2 - 1) + findkthSmallestNum(nums1, nums2, length // 2)) / 2 
+            return (findkthSmallestNum(nums1, nums2, length // 2 - 1) + findkthSmallestNum(nums1, nums2, length // 2)) / 2

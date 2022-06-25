@@ -17,4 +17,4 @@ code3.py:
 code4.py:
 * Runtime: 134 ms, faster than 55.18% of Python3 online submissions for Median of Two Sorted Arrays.
 * Memory Usage: 14.3 MB, less than 6.02% of Python3 online submissions for Median of Two Sorted Arrays.
-> divide and conquer 
+> divide and conquer
