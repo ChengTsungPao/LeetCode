@@ -11,7 +11,7 @@ class Solution:
                 if not s and not p:
                     return True
                 if not s or not p:
-                    return len(p) >= 2 and len(p) % 2 == 0 and set(p[1::2]) == {"*"}
+                    return len(p) % 2 == 0 and set(p[1::2]) == {"*"}
 
                 ans = False
                 if len(p) >= 2 and p[1] == "*":
