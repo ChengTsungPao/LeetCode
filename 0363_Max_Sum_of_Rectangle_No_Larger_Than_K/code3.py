@@ -2,7 +2,28 @@ class Solution:
     def maxSumSubmatrix(self, matrix: List[List[int]], k: int) -> int:
         from sortedcontainers import SortedList
         
+        def transpose(matrix):
+            m = len(matrix)
+            n = len(matrix[0])
+            transposeMatrix = [[0] * m for _ in range(n)]
+            for i in range(m):
+                for j in range(n):
+                    transposeMatrix[j][i] = matrix[i][j]
+            return matrix
+
         def maxSubarrySmallerThanK(nums):
+            
+            # kadane's algorithm
+            max_, sum_ = -float("inf"), 0
+            for num in nums:
+                sum_ += num
+                max_ = max(max_, sum_)
+                if sum_ < 0:
+                    sum_ = 0
+            if max_ <= k:
+                return max_
+            
+            # preSum + bst
             bst = SortedList()
             max_, sum_ = -float("inf"), 0
             for num in nums:
@@ -12,6 +33,9 @@ class Solution:
                 if index < len(bst):
                     max_ = max(max_, sum_ - bst[index])
             return max_
+        
+        if len(matrix) > len(matrix[0]):
+            matrix = transpose(matrix)
         
         m = len(matrix)
         n = len(matrix[0])
