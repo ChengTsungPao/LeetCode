@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 96 ms, faster than 85.01% of Python3 online submissions for Merge k Sorted Lists.
 * Memory Usage: 17.5 MB, less than 92.96% of Python3 online submissions for Merge k Sorted Lists.
 > heap
+
+code4.py:
+* Runtime: 165 ms, faster than 52.39% of Python3 online submissions for Merge k Sorted Lists.
+* Memory Usage: 17.6 MB, less than 93.48% of Python3 online submissions for Merge k Sorted Lists.
+> mergeSort
