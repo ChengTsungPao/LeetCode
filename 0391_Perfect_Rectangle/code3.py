@@ -15,13 +15,13 @@ class Solution:
         heap = []
         for i, (x1, y1, x2, y2) in enumerate(rectangles):
             area += (x2 - x1) * (y2 - y1)
-            heap.append((x1,  (i + 1), y1, y2))
-            heap.append((x2, -(i + 1), y1, y2))
+            heap.append((x1,  1, y1, y2))
+            heap.append((x2, -1, y1, y2))
         heapq.heapify(heap)
         
         while heap:
-            x, i, y1, y2 = heapq.heappop(heap)
-            if i < 0:
+            x, t, y1, y2 = heapq.heappop(heap)
+            if t < 0:
                 bst.remove((y1, y2))
             else:
                 index = bst.bisect_left((y1, y2))
