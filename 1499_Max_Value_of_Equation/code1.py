@@ -3,20 +3,17 @@ class Solution:
 
         # yi + yj + |xi - xj| = (yi - xi) + (yj + xj)
 
-        n = len(points)
-
         ans = -float("inf")
         heap = []
 
-        for i in range(n):
-            xi, yi = points[i]
-
-            while heap and xi - heap[0][1] > k:
+        for x, y in points:
+            
+            while heap and x - heap[0][1] > k:
                 heapq.heappop(heap)
 
             if heap:
-                ans = max(ans, -heap[0][0] + (yi + xi))
+                ans = max(ans, -heap[0][0] + (y + x))
 
-            heapq.heappush(heap, (-(yi - xi), xi))
+            heapq.heappush(heap, (-(y - x), x))
         
         return ans
