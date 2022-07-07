@@ -10,6 +10,6 @@ code2.py:
 > disjoint set (reverse)
 
 code3.py:
-* Runtime: 3746 ms, faster than 42.20% of Python3 online submissions for Bricks Falling When Hit.
-* Memory Usage: 23.9 MB, less than 67.05% of Python3 online submissions for Bricks Falling When Hit.
+* Runtime: 3101 ms, faster than 71.10% of Python3 online submissions for Bricks Falling When Hit.
+* Memory Usage: 23.9 MB, less than 78.61% of Python3 online submissions for Bricks Falling When Hit.
 > dfs (reverse)
