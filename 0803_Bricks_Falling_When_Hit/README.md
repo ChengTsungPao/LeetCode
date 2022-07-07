@@ -8,3 +8,8 @@ code2.py:
 * Runtime: 4330 ms, faster than 22.29% of Python3 online submissions for Bricks Falling When Hit.
 * Memory Usage: 27.2 MB, less than 16.27% of Python3 online submissions for Bricks Falling When Hit.
 > disjoint set
+
+code3.py:
+* Runtime: 3746 ms, faster than 42.20% of Python3 online submissions for Bricks Falling When Hit.
+* Memory Usage: 23.9 MB, less than 67.05% of Python3 online submissions for Bricks Falling When Hit.
+> dfs
