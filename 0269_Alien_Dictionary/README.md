@@ -1,6 +1,6 @@
 ## Question: https://leetcode.com/problems/alien-dictionary/
 
 code1.py:
-* Runtime: 51 ms, faster than 22.69% of Python3 online submissions for Alien Dictionary.
-* Memory Usage: 14.3 MB, less than 56.35% of Python3 online submissions for Alien Dictionary.
+* Runtime: 55 ms, faster than 46.13% of Python3 online submissions for Alien Dictionary.
+* Memory Usage: 13.9 MB, less than 58.21% of Python3 online submissions for Alien Dictionary.
 > topology sort
