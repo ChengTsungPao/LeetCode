@@ -8,3 +8,8 @@ code2.py:
 * Runtime: 53 ms, faster than 90.00% of Python3 online submissions for Iterator for Combination.
 * Memory Usage: 16.3 MB, less than 53.43% of Python3 online submissions for Iterator for Combination.
 > yield
+
+code3.py:
+* Runtime: 84 ms, faster than 55.11% of Python3 online submissions for Iterator for Combination.
+* Memory Usage: 16.2 MB, less than 67.88% of Python3 online submissions for Iterator for Combination.
+> bitmask
