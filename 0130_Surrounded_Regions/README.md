@@ -5,7 +5,7 @@ code1.py:
 * Memory Usage: 57 MB, less than 6.67% of Python3 online submissions for Surrounded Regions.
 > dfs
 
-code1.py:
+code2.py:
 * Runtime: 136 ms, faster than 96.78% of Python3 online submissions for Surrounded Regions.
 * Memory Usage: 15.9 MB, less than 51.46% of Python3 online submissions for Surrounded Regions..
 > dfs
