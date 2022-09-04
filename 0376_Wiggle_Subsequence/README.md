@@ -7,5 +7,5 @@ code1.py:
 
 code2.py:
 * Runtime: 35 ms, faster than 94.95% of Python3 online submissions for Wiggle Subsequence.
-M* emory Usage: 13.9 MB, less than 34.58% of Python3 online submissions for Wiggle Subsequence.
+* Memory Usage: 13.9 MB, less than 34.58% of Python3 online submissions for Wiggle Subsequence.
 > dp: O(n)
