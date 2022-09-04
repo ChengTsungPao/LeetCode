@@ -6,6 +6,6 @@ code1.py:
 > dp: O(n^2)
 
 code2.py:
-* Runtime: 48 ms, faster than 71.48% of Python3 online submissions for Wiggle Subsequence.
-* Memory Usage: 13.8 MB, less than 75.98% of Python3 online submissions for Wiggle Subsequence.
+* Runtime: 35 ms, faster than 94.95% of Python3 online submissions for Wiggle Subsequence.
+M* emory Usage: 13.9 MB, less than 34.58% of Python3 online submissions for Wiggle Subsequence.
 > dp: O(n)
