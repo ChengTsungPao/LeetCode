@@ -9,7 +9,7 @@ class Solution:
             
         
         que = collections.deque([(n - 1, 0)])
-        visited = set()
+        visited = set([n - 1])
         
         while que:
             index, step = que.pop()
