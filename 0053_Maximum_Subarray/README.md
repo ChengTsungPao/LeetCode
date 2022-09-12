@@ -13,4 +13,9 @@ code3.py:
 * Memory Usage: 27.8 MB, less than 86.38% of Python3 online submissions for Maximum Subarray.
 > kadane's algorithm
 
+code4.py:
+* Runtime: 5282 ms, faster than 5.00% of Python3 online submissions for Maximum Subarray.
+* Memory Usage: 42.1 MB, less than 10.60% of Python3 online submissions for Maximum Subarray.
+> divid and conquer
+
 </br>note : code2.py is the same meaning of code1.java
