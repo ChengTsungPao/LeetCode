@@ -49,6 +49,7 @@ class Solution:
                    symbol, i = getSymbol(i, j)
                    number, i = getNumber(i, j)
                    status[symbol] += number
+
            return status
 
        ans = ""
