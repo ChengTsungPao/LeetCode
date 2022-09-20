@@ -39,7 +39,6 @@ public:
             return false;
         }
         
-        int num;
         vector<string> numbers = split(str, ":");
         for(unsigned int i = 0; i < numbers.size(); i++){
             if(!(isHexStr(numbers[i]) && numbers[i].size() <= 4)){
