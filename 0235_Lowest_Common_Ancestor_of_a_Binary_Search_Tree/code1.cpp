@@ -8,8 +8,6 @@
  * };
  */
 
-typedef TreeNode* TreeNodePtr;
-
 class Solution {
 public:
     TreeNode* ans = nullptr;
@@ -42,7 +40,7 @@ public:
         return hitCount;
     }
     
-    void swap(TreeNodePtr &a, TreeNodePtr &b){
+    void swap(TreeNode* &a, TreeNode* &b){
         TreeNode* temp = a;
         a = b;
         b = temp;
