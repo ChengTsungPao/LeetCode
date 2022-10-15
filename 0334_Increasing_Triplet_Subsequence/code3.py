@@ -1,17 +1,28 @@
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         
-        # 策略 => 找最小和次小的在往後找比較有機會
+        # 利用 Monotonic Stack "找出j前面有沒有比較小的i"和"j後面有沒有比較大的k"
         
-        first_small_num = float("inf")
-        second_small_num = float("inf")
+        n = len(nums)
+        ans = [False] * n
         
-        for num in nums:
-            if num < first_small_num:
-                first_small_num = num
-            elif num > first_small_num and num < second_small_num:
-                second_small_num = num
-            elif num > second_small_num:
-                return True
+        stack = []
+        for k in range(n):
+            
+            while stack and stack[-1][0] < nums[k]:
+                _, index = stack.pop()
+                ans[index] = True
                 
+            stack.append((nums[k], k))
+            
+        stack = []
+        for i in range(n - 1, -1, -1):
+            
+            while stack and stack[-1][0] > nums[i]:
+                _, index = stack.pop()
+                if ans[index]:
+                    return True
+                
+            stack.append((nums[i], i))
+            
         return False

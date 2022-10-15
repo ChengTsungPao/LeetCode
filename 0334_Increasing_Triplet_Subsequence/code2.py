@@ -7,11 +7,11 @@ class Solution:
         second_small_num = float("inf")
         
         for num in nums:
-            if num <= first_small_num:
+            if num < first_small_num:
                 first_small_num = num
-            elif num <= second_small_num:
+            elif num > first_small_num and num < second_small_num:
                 second_small_num = num
-            else:
+            elif num > second_small_num:
                 return True
                 
         return False
