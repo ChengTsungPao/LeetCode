@@ -1,16 +1,28 @@
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         
-        n = len(nums)
+        # 利用 Monotonic Stack "找出j前面有沒有比較小的i"和"j後面有沒有比較大的k"
         
-        prefixMin = [nums[ 0]] * n
-        suffixMax = [nums[-1]] * n
-        for i in range(1, n):
-            prefixMin[ i] = min(prefixMin[ i - 1], nums[ i])
-            suffixMax[~i] = max(suffixMax[~i + 1], nums[~i])
+        n = len(nums)
+        ans = [False] * n
+        
+        stack = []
+        for k in range(n):
             
-        for i in range(1, n - 1):
-            if prefixMin[i - 1] < nums[i] < suffixMax[i + 1]:
-                return True
+            while stack and stack[-1][0] < nums[k]:
+                _, index = stack.pop()
+                ans[index] = True
+                
+            stack.append((nums[k], k))
+            
+        stack = []
+        for i in range(n - 1, -1, -1):
+            
+            while stack and stack[-1][0] > nums[i]:
+                _, index = stack.pop()
+                if ans[index]:
+                    return True
+                
+            stack.append((nums[i], i))
             
         return False
