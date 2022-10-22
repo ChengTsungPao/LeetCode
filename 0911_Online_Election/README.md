@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 1694 ms, faster than 20.30% of Python3 online submissions for Online Election.
 * Memory Usage: 20 MB, less than 18.67% of Python3 online submissions for Online Election.
 > bst + hashtable + binary search
+
+code3.cpp:
+* Runtime: 278 ms, faster than 96.28% of C++ online submissions for Online Election.
+* Memory Usage: 103.5 MB, less than 75.83% of C++ online submissions for Online Election.
+> hashtable + binary search
