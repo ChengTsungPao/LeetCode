@@ -6,6 +6,6 @@ code1.py:
 > Two Pass Solution
 
 code2.py:
-# Runtime: 52 ms, faster than 95.22% of Python3 online submissions for Apply Operations to an Array.
-# Memory Usage: 14.1 MB, less than 65.60% of Python3 online submissions for Apply Operations to an Array.
+* Runtime: 52 ms, faster than 95.22% of Python3 online submissions for Apply Operations to an Array.
+* Memory Usage: 14.1 MB, less than 65.60% of Python3 online submissions for Apply Operations to an Array.
 > One Pass Solution
