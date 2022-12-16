@@ -5,7 +5,7 @@ class Solution:
         m = len(grid)
         n = len(grid[0])
         
-        def bfs(query, edge, minNextEdge = [0]):
+        def bfs(query, edge):
 
             newVisitedPos = 0
             
