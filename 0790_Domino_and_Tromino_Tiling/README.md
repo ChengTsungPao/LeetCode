@@ -13,3 +13,8 @@ code3.py:
 * Runtime: 36 ms, faster than 90.83% of Python3 online submissions for Domino and Tromino Tiling.
 * Memory Usage: 13.8 MB, less than 98.41% of Python3 online submissions for Domino and Tromino Tiling.
 > dp
+
+code4.py:
+* Runtime: 65 ms, faster than 12.60% of Python3 online submissions for Domino and Tromino Tiling.
+* Memory Usage: 17.6 MB, less than 5.41% of Python3 online submissions for Domino and Tromino Tiling.
+> recur + memo
