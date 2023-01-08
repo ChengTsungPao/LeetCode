@@ -4,43 +4,38 @@ class Solution:
         Floyd Warshall => 第k次loop，確保轉運k次後，能到達的點
         '''
         
-        cur_number = 0
-        number = {}
-        
-        for end, start in equations:
-            if start not in number:
-                number[start] = cur_number
-                cur_number += 1
-
-            if end not in number:
-                number[end] = cur_number
-                cur_number += 1
-        
-        
-        n = len(number)
-        dp = [[1 if i == j else -1 for j in range(n)] for i in range(n)]
-
-        for i in range(len(equations)):
-            endNum = number[equations[i][0]]
-            startNum = number[equations[i][1]]
-            value = values[i]
-            dp[startNum][endNum] = value
-            dp[endNum][startNum] = 1 / value
-           
+        # define the char number
+        ch_to_num, num = {}, 0
+        for numerator, denominator in equations:
+            if numerator not in ch_to_num:
+                ch_to_num[numerator] = num
+                num += 1
+            if denominator not in ch_to_num:
+                ch_to_num[denominator] = num
+                num += 1          
+                
+        # create Floyd Warshall init matrix
+        n = len(ch_to_num)
+        cost = [[1 if i == j else float("inf") for j in range(n)] for i in range(n)]
+        for (numerator, denominator), value in zip(equations, values):
+            i, j = ch_to_num[numerator], ch_to_num[denominator]
+            cost[i][j] = value
+            cost[j][i] = 1 / value
+            
+        # running Floyd Warshall
         for k in range(n):
             for i in range(n):
                 for j in range(n):
-                    if dp[i][j] == -1 and dp[i][k] > 0 and dp[k][j] > 0:
-                        dp[i][j] = dp[i][k] * dp[k][j]
+                    if cost[i][j] == float("inf") and cost[i][k] * cost[k][j] != float("inf"):
+                        cost[i][j] = cost[i][k] * cost[k][j]
                         
-
+        # find answer
         ans = []
-        for end, start in queries:
-            if end in number and start in number:
-                endNum = number[end]
-                startNum = number[start]    
-                ans.append(dp[startNum][endNum])
+        for numerator, denominator in queries:
+            if numerator not in ch_to_num or denominator not in ch_to_num:
+                ans.append(-1.0)
             else:
-                ans.append(-1)
-        
+                i, j = ch_to_num[numerator], ch_to_num[denominator]
+                ans.append(cost[i][j] if cost[i][j] != float("inf") else -1.0)
+                
         return ans
