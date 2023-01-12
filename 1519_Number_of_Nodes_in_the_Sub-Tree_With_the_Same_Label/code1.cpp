@@ -15,23 +15,23 @@ public:
     
     vector<int> recur(int node, unordered_map<int, vector<int>>& graph, string& labels, vector<int>& ans){
         char ch = labels[node];
-        vector<int> count(26, 0);
+        vector<int> nodeCount(26, 0);
         
         if(ans[node] >= 0){
-            return count;
+            return nodeCount;
         }
         
         ans[node] = 0;
         
-        count[ch - 'a'] += 1;
+        nodeCount[ch - 'a'] += 1;
         for(int nextNode: graph[node]){
             vector<int> nextNodeCount = recur(nextNode, graph, labels, ans);
             for(int i = 0; i < nextNodeCount.size(); i++){
-                count[i] += nextNodeCount[i];
+                nodeCount[i] += nextNodeCount[i];
             }           
         }
         
-        ans[node] = count[ch - 'a'];
-        return count;             
+        ans[node] = nodeCount[ch - 'a'];
+        return nodeCount;             
     }
 };
