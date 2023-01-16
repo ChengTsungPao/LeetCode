@@ -1,6 +1,0 @@
-## Question: https://leetcode.com/problems/soup-servings/
-
-code1.py:
-* Runtime: 63 ms, faster than 27.56% of Python3 online submissions for Soup Servings.
-* Memory Usage: 14.7 MB, less than 56.69% of Python3 online submissions for Soup Servings.
-> recur + memo
