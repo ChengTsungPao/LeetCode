@@ -1,4 +1,4 @@
 ## Question: https://leetcode.com/problems/two-sum/
 
-* time complexity: O(nlogn)
-* space complexity: O(1)
+* Time complexity: O(nlogn)
+* Space complexity: O(1)
