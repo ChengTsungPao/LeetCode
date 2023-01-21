@@ -5,8 +5,8 @@ code1.py:
 * Memory Usage: 15.6 MB, less than 6.52% of Python3 online submissions for Merge Intervals.
 
 code2.py:
-* Runtime: 366 ms, faster than 5.04% of Python3 online submissions for Merge Intervals.
-* Memory Usage: 18.7 MB, less than 33.33% of Python3 online submissions for Merge Intervals.
+* Runtime: 149 ms, faster than 84.15% of Python3 online submissions for Merge Intervals.
+* Memory Usage: 18.9 MB, less than 8.82% of Python3 online submissions for Merge Intervals.
 > binary search
 
 code3.py:
