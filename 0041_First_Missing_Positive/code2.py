@@ -1,21 +1,16 @@
-# Time: O(N)
-# Space: O(1)
-
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         
-        index = 0
-        while index < len(nums):
-            i, j = index, nums[index] - 1
-            if nums[index] - 1 == index or nums[index] <= 0 or nums[index] >= len(nums) + 1 or nums[i] == nums[j]:
-                index += 1
-            else:
+        n = len(nums)
+        
+        for i in range(n):
+            j = nums[i] - 1
+            while not (j >= n or j < 0 or nums[i] == nums[j]):
                 nums[i], nums[j] = nums[j], nums[i]
-        
-        ans = len(nums) + 1    
-        for index in range(len(nums)):
-            if nums[index] - 1 != index:
-                ans = index + 1
-                break
-        
-        return ans
+                j = nums[i] - 1
+                
+        for i in range(n):
+            if i != nums[i] - 1:
+                return i + 1
+            
+        return n + 1

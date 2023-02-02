@@ -6,6 +6,6 @@ code1.py:
 >hash table
 
 code2.py:
-* Runtime: 948 ms, faster than 60.95% of Python3 online submissions for First Missing Positive.
-* Memory Usage: 60.1 MB, less than 92.94% of Python3 online submissions for First Missing Positive.
+* Runtime: 313 ms, faster than 57.61% of Python3 online submissions for First Missing Positive.
+* Memory Usage: 27.2 MB, less than 83.08% of Python3 online submissions for First Missing Positive.
 > In-place swap
