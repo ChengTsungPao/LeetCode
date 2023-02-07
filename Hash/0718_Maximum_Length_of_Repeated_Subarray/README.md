@@ -4,4 +4,4 @@
 * Time complexity: O(nlogn)
 * Space complexity: O(n)
 
-> Rolling Hash
+> binary search、rolling hash

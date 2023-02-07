@@ -3,3 +3,5 @@
 
 * Time complexity: O(nlogn)
 * Space complexity: O(n)
+
+> binary search、rolling hash
