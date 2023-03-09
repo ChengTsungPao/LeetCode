@@ -1,6 +1,9 @@
 class Solution:
     def countSubarrays(self, nums: List[int], minK: int, maxK: int) -> int:
         '''
+        minK = 1
+        maxK = 5
+        
         [3, 1, 2, 3, 5, 7, 5, 7]
          ^  L        R  
         
