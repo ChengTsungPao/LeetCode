@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 280 ms, faster than 87.37% of Python3 online submissions for Add and Search Word - Data structure design.
 * Memory Usage: 24.4 MB, less than 21.74% of Python3 online submissions for Add and Search Word - Data structure design.
 > dictionary (Trie)
+
+code4.cpp:
+* Runtime: 2486 ms, faster than 10.83% of C++ online submissions for Design Add and Search Words Data Structure.
+* Memory Usage: 565.1 MB, less than 45.33% of C++ online submissions for Design Add and Search Words Data Structure.
+> tree node (Trie)
