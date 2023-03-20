@@ -43,8 +43,7 @@ public:
                 valIndexToIndex.erase(val);
             }
         }
-        return isExist;
-        
+        return isExist;   
     }
     
     int getRandom() {
