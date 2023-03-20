@@ -1,6 +1,6 @@
 class RandomizedCollection {
 public:
-    unordered_map<int, multiset<int>> valIndex;
+    unordered_map<int, unordered_multiset<int>> valIndex;
     vector<int> vals;
     
     RandomizedCollection() {

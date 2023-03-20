@@ -6,6 +6,6 @@ code1.cpp:
 > hashtable
 
 code2.cpp:
-* Runtime: 258 ms, faster than 62.91% of C++ online submissions for Insert Delete GetRandom O(1) - Duplicates allowed.
-* Memory Usage: 105.3 MB, less than 53.52% of C++ online submissions for Insert Delete GetRandom O(1) - Duplicates allowed.
+* Runtime: 253 ms, faster than 73.71% of C++ online submissions for Insert Delete GetRandom O(1) - Duplicates allowed.
+* Memory Usage: 107.8 MB, less than 38.03% of C++ online submissions for Insert Delete GetRandom O(1) - Duplicates allowed.
 > hashtable
