@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 1794 ms, faster than 40.80% of Python3 online submissions for Reorder Routes to Make All Paths Lead to the City Zero.
 * Memory Usage: 43 MB, less than 75.36% of Python3 online submissions for Reorder Routes to Make All Paths Lead to the City Zero.
 > bfs
+
+code3.cpp:
+* Runtime: 760 ms, faster than 16.38% of C++ online submissions for Reorder Routes to Make All Paths Lead to the City Zero.
+* Memory Usage: 207.2 MB, less than 5.05% of C++ online submissions for Reorder Routes to Make All Paths Lead to the City Zero.
+> dfs
