@@ -24,7 +24,7 @@ public:
             return;
         } else if(targets.find(nextNode) != targets.end()){
             int cycle = target - targets[nextNode] + 1;
-            ans = (ans < cycle && cycle != 0) ? cycle : ans;
+            ans = (ans < cycle && cycle > 0) ? cycle : ans;
             return;
         }
         
