@@ -21,7 +21,7 @@ public:
 
 class Solution {
 public:
-    unordered_map<int, Node*> memo;
+    unordered_map<Node*, Node*> memo;
     
     Node* cloneGraph(Node* node) {
         if(node == nullptr){
@@ -29,13 +29,13 @@ public:
         }
         
         int val = node -> val;
-        if(memo.find(val) != memo.end()){
-            return memo[val];
+        if(memo.find(node) != memo.end()){
+            return memo[node];
         }
         
         // copy current node
         Node* copyNode = new Node(val);
-        memo[val] = copyNode;
+        memo[node] = copyNode;
         
         // copy neighbor node
         for(Node* nextNode: node -> neighbors){
