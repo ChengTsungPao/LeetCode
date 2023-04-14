@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 2638 ms, faster than 43.11% of Python3 online submissions for Longest Palindromic Subsequence.
 * Memory Usage: 31.3 MB, less than 60.41% of Python3 online submissions for Longest Palindromic Subsequence.
 > dp
+
+code4.cpp:
+* Runtime: 825 ms, faster than 5.06% of C++ online submissions for Longest Palindromic Subsequence.
+* Memory Usage: 136.1 MB, less than 5.06% of C++ online submissions for Longest Palindromic Subsequence.
+> recur + memo
