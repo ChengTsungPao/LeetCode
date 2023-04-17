@@ -5,5 +5,5 @@ class Solution
         maxkid = max(candies)
         ans = []
         for n in candies
-            ans.append(n + extraCandies = maxkid)
+            ans.append(n + extraCandies >= maxkid)
         return ans
