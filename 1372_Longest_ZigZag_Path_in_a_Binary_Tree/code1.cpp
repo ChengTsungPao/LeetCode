@@ -26,7 +26,7 @@ public:
         
         int left = recur(root -> left, 'L', ans);
         int right = recur(root -> right, 'R', ans); 
-        *ans = max(*ans, max(left + 1, right + 1));
+        *ans = max(*ans, max(left, right) + 1);
         return (parentD == 'R') ? left + 1 : right + 1;
     }
 };
