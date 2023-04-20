@@ -12,7 +12,7 @@
 class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
-        int ans = 1;
+        int ans = 0;
         unordered_map<int, int> offest;
         recur(root, 0, 0, offest, &ans);
         return ans;
