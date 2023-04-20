@@ -18,7 +18,7 @@ public:
         return ans;
     }
     
-    void recur(TreeNode* root, int depth, long target, unordered_map<int, int>& offest, int* ans){
+    void recur(TreeNode* root, int depth, unsigned int target, unordered_map<int, int>& offest, int* ans){
         if(root == nullptr) {
             return;
         }
