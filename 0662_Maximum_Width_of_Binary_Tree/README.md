@@ -3,9 +3,9 @@
 code1.py:
 * Runtime: 50 ms, faster than 77.29% of Python3 online submissions for Maximum Width of Binary Tree.
 * Memory Usage: 18.8 MB, less than 10.64% of Python3 online submissions for Maximum Width of Binary Tree.
-> recur
+> recur + heap index
 
 code2.cpp:
 * Runtime: 234 ms, faster than 5.61% of C++ online submissions for Maximum Width of Binary Tree.
 * Memory Usage: 162 MB, less than 5.25% of C++ online submissions for Maximum Width of Binary Tree.
-> recur (Large Number Problem)
+> recur + heap index (Large Number Problem)
