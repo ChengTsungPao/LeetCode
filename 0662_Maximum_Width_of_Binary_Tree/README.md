@@ -9,3 +9,8 @@ code2.cpp:
 * Runtime: 234 ms, faster than 5.61% of C++ online submissions for Maximum Width of Binary Tree.
 * Memory Usage: 162 MB, less than 5.25% of C++ online submissions for Maximum Width of Binary Tree.
 > recur + heap index (Large Number Problem)
+
+code3.cpp:
+* Runtime: 14 ms, faster than 22.50% of C++ online submissions for Maximum Width of Binary Tree.
+* Memory Usage: 18.7 MB, less than 5.25% of C++ online submissions for Maximum Width of Binary Tree.
+> recur + heap index + offset
