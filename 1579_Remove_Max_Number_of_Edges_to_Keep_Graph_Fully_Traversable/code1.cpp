@@ -1,4 +1,4 @@
-class disjoin_set {
+class disjoint_set {
 public:
     unordered_map<int, int> parent;
     unordered_map<int, int> weight;
@@ -52,7 +52,7 @@ public:
     int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
         
         int ans = 0;
-        disjoin_set DS1, DS2;
+        disjoint_set DS1, DS2;
         for(int i = 0; i < edges.size(); i++){
             int type = edges[i][0], node1 = edges[i][1], node2 = edges[i][2];
             
