@@ -26,11 +26,7 @@ class Solution:
         # get min cost
         @functools.lru_cache(None)
         def getMinCost(node, preNode, state):
-            p, t = price[node], nodeVisitedTimes[node] 
-            
-            if len(graph[node]) == 1 and graph[node][0] == preNode:
-                return t * p // 2 if not state else t * p
-            
+            p, t = price[node], nodeVisitedTimes[node]             
             select = t * p // 2
             noSelect = t * p
             for nextNode in graph[node]:
