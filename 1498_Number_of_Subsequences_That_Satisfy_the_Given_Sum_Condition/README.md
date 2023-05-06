@@ -14,3 +14,8 @@ code3.py:
 * Runtime: 2381 ms, faster than 20.01% of Python3 online submissions for Number of Subsequences That Satisfy the Given Sum Condition.
 * Memory Usage: 27 MB, less than 16.85% of Python3 online submissions for Number of Subsequences That Satisfy the Given Sum Condition.
 > sort + two pointer (pow optimization)
+
+code4.py:
+* Runtime: 811 ms, faster than 82.35% of Python3 online submissions for Number of Subsequences That Satisfy the Given Sum Condition.
+* Memory Usage: 29.2 MB, less than 8.18% of Python3 online submissions for Number of Subsequences That Satisfy the Given Sum Condition.
+> sort + two pointer (pow optimization) (API)
