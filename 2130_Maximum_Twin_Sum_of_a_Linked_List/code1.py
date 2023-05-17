@@ -5,12 +5,14 @@
 #         self.next = next
 class Solution:
     def pairSum(self, head: Optional[ListNode]) -> int:
-        
+
+	# create double linked list        
         pointer = head
         while pointer.next:
             pointer.next.prev = pointer
             pointer = pointer.next
         
+	# two pointer find max twin
         ans = 0
         left, right = head, pointer
         while id(left.next) != id(right):
