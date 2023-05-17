@@ -25,7 +25,7 @@ class Solution:
         # two pointer find max twin
         ans = 0
         left, right = preNode, pointer
-        while id(left) != id(pointer):
+        while right:
             ans = max(ans, left.val + right.val)
             left, right = left.next, right.next
         

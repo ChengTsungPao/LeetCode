@@ -6,6 +6,6 @@ code1.py:
 > double linked list
 
 code2.py:
-* Runtime: 956 ms, faster than 37.49% of Python3 online submissions for Maximum Twin Sum of a Linked List.
-* Memory Usage: 47.6 MB, less than 50.81% of Python3 online submissions for Maximum Twin Sum of a Linked List.
+* Runtime: 925 ms, faster than 51.20% of Python3 online submissions for Maximum Twin Sum of a Linked List.
+* Memory Usage: 47.5 MB, less than 53.83% of Python3 online submissions for Maximum Twin Sum of a Linked List.
 > reverse linked list
