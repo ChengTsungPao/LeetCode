@@ -10,7 +10,7 @@ public:
     
     void recur(int idx, vector<int>& buckets, vector<int>& tasks, int sessionTime){
         
-        // puring
+        // pruning
         if(buckets.size() >= ans){
             return;
         }
