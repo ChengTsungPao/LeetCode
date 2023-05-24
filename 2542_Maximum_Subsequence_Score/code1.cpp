@@ -1,19 +1,32 @@
-class Solution:
-    def cycleLengthQueries(self, n: int, queries: List[List[int]]) -> List[int]:
+class Solution {
+public:
+    long long maxScore(vector<int>& nums1, vector<int>& nums2, int k) {
+        int n = nums1.size();
         
-        def getAncestor(a, b):
-            if a > b:
-                return getAncestor(b, a)
-            if a == b:
-                return a
-            return getAncestor(a, b // 2)
+        vector<tuple<int, int>> nums;
+        for(int i = 0; i < n; i++){
+            nums.push_back({nums2[i], nums1[i]});
+        }
         
-        ans = []
-        for a, b in queries:
-            ancestor = getAncestor(a, b)
-            ancestor_h = int(math.log2(ancestor))
-            a_h = int(math.log2(a))
-            b_h = int(math.log2(b))
-            ans.append((a_h - ancestor_h) + (b_h - ancestor_h) + 1)
+        sort(nums.begin(), nums.end(), greater<tuple<int, int>>());
+        
+        priority_queue<int, vector<int>, greater<int>> pq;
+        long long ans = 0, _sum = 0;
+        for(int i = 0; i < n; i++){
+            tuple<int, int> t = nums[i];
+            int num2 = get<0>(t), num1 = get<1>(t);
             
-        return ans
+            if(pq.size() == k - 1){
+                ans = max(ans, (_sum + num1) * num2);
+            }
+            
+            _sum += num1;
+            pq.push(num1);
+            if(pq.size() >= k){
+                _sum -= pq.top(); pq.pop();
+            }
+        }
+        
+        return ans;        
+    }
+};
