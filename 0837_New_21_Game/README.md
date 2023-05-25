@@ -10,6 +10,11 @@ code2.cpp:
 > recur + memo
 
 code3.cpp:
+* Runtime: 0 ms, faster than 100.00% of C++ online submissions for New 21 Game.
+* Memory Usage: 9.4 MB, less than 33.06% of C++ online submissions for New 21 Game.
+> recur + memo + math
+
+code4.cpp:
 * Runtime: 4 ms, faster than 68.55% of C++ online submissions for New 21 Game.
 * Memory Usage: 8.5 MB, less than 87.90% of C++ online submissions for New 21 Game.
-> dp
+> dp + suffix
