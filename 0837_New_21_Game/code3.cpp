@@ -2,8 +2,8 @@ class Solution {
 public:
     double new21Game(int n, int k, int maxPts) {
         /*
-        F(x  ) = (F(x+1) + F(x+2) + F(x+3) + ......  + F(x+W)           ) / W
-        F(x+1) = (         F(x+2) + F(x+3) + ........+ F(x+W) + F(x+1+W)) / W
+        F(x  ) = (F(x+1) + F(x+2) + F(x+3) + ...... + F(x+W)           ) / W
+        F(x+1) = (         F(x+2) + F(x+3) + ...... + F(x+W) + F(x+1+W)) / W
         
         => F(x) - F(x+1) = (F(x+1) - F(x+1+W)) / W => F(x) = F(x+1) + (F(x+1) - F(x+1+W)) / W
         
