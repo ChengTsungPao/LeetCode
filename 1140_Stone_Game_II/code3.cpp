@@ -2,9 +2,8 @@ class Solution {
 public:
     int stoneGameII(vector<int>& piles) {
         int n = piles.size();
-        int _sum = accumulate(piles.begin(), piles.end(), 0);
         vector<vector<vector<int>>> memo(n, vector<vector<int>>(n + 1, vector<int>(2, -1)));
-        return (_sum + recur(0, 1, true, piles, memo)) / 2;
+        return recur(0, 1, true, piles, memo);
     }
     
     int recur(int idx, int M, bool who, vector<int>& piles, vector<vector<vector<int>>>& memo) {
@@ -26,7 +25,7 @@ public:
         } else {
             for(int x = 1; x <= min(2 * M, n - idx); x++){
                 _sum += piles[idx + x - 1];
-                ans = min(ans, recur(idx + x, max(x, M), true, piles, memo) - _sum);
+                ans = min(ans, recur(idx + x, max(x, M), true, piles, memo));
             }
         }
         
