@@ -1,7 +1,6 @@
 class Solution {
 public:
     int stoneGameII(vector<int>& piles) {
-
 	// 計算 Alice - Bob 和 Alice + Bob，解出 Alice
 
         int n = piles.size();
