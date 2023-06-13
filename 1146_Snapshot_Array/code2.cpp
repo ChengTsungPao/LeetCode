@@ -26,15 +26,9 @@ public:
     }
     
     int get(int index, int snap_id) {
-        tuple<int, int> t = {snap_id, -1};
-        int i = lower_bound(arr[index].begin(), arr[index].end(), t) - arr[index].begin();
-        
-        int n = arr[index].size();
-        if(i >= n){
-            return std::get<1>(arr[index].back());
-        }
-        int id = std::get<0>(arr[index][i]);
-        return (id == snap_id) ? std::get<1>(arr[index][i]) : std::get<1>(arr[index][i - 1]);
+        tuple<int, int> t = {snap_id + 1, -1};
+        int i = lower_bound(arr[index].begin(), arr[index].end(), t) - arr[index].begin() - 1;
+        return std::get<1>(arr[index][i]);
     }
 };
 

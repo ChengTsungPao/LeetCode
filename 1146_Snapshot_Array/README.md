@@ -6,6 +6,6 @@ code1.py:
 > brute force
 
 code2.cpp:
-* Runtime: 489 ms, faster than 16.14% of C++ online submissions for Snapshot Array.
-* Memory Usage: 157.5 MB, less than 13.31% of C++ online submissions for Snapshot Array.
+* Runtime: 438 ms, faster than 26.15% of C++ online submissions for Snapshot Array.
+* Memory Usage: 157.4 MB, less than 13.31% of C++ online submissions for Snapshot Array.
 > binary search
