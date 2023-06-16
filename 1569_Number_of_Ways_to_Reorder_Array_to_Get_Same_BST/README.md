@@ -9,3 +9,8 @@ code2.cpp:
 * Runtime: 144 ms, faster than 77.48% of C++ online submissions for Number of Ways to Reorder Array to Get Same BST.
 * Memory Usage: 51.6 MB, less than 66.89% of C++ online submissions for Number of Ways to Reorder Array to Get Same BST.
 > divide and conquer + Fermat's little theorem (big number div)
+
+code3.cpp:
+* Runtime: 251 ms, faster than 69.53% of C++ online submissions for Number of Ways to Reorder Array to Get Same BST.
+* Memory Usage: 56 MB, less than 66.22% of C++ online submissions for Number of Ways to Reorder Array to Get Same BST.
+> divide and conquer + Pascal's triangle (big number div)
