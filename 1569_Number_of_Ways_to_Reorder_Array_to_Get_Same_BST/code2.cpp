@@ -43,7 +43,7 @@ public:
     }
     
     // calculate mod combinations
-    // Fermat's little theorem: a^(M - 1) ≡ 1 (mod M) => a^(M - 2) ≡ a^(-1) (mod M)
+    // Fermat's little theorem: a^(M - 1) ≡ 1 (mod M) => a^(M - 2) ≡ a^(-1) (mod M) (M is prime)
     
     long long myPow(int a, int p, int M){
         if(p == 0){
