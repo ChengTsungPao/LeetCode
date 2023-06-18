@@ -10,8 +10,7 @@ public:
         vector<vector<int>> count(m, vector<int>(n, -1));
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                recur(i, j, 0, count, grid);
-                ans = (ans + count[i][j]) % MOD;
+                ans = (ans + recur(i, j, 0, count, grid)) % MOD;
             }
         }
         
