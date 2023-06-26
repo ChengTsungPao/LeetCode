@@ -40,7 +40,6 @@ public:
                 pq_r.push((i <= j) ? -costs[j] : INT_MIN);
                 j--;
             }
-            
             k--;
         }
         
