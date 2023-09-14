@@ -9,3 +9,8 @@ code2.py:
 * Runtime: 28 ms, faster than 96.70% of Python3 online submissions for Count All Valid Pickup and Delivery Options.
 * Memory Usage: 13.9 MB, less than 42.41% of Python3 online submissions for Count All Valid Pickup and Delivery Options.
 > math
+
+code3.cpp:
+* Runtime: 0 ms, faster than 100.00% of C++ online submissions for Count All Valid Pickup and Delivery Options.
+* Memory Usage: 6.3 MB, less than 18.52% of C++ online submissions for Count All Valid Pickup and Delivery Options.
+> math + Fermat's little theorem (big number div)
