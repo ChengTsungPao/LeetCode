@@ -5,7 +5,7 @@ code1.py:
 * Memory Usage: 14 MB, less than 92.83% of Python3 online submissions for Remove Duplicate Letters.
 > greedy
 
-code1.py:
+code2.py:
 * Runtime: 46 ms, faster than 55.96% of Python3 online submissions for Remove Duplicate Letters.
 * Memory Usage: 13.9 MB, less than 97.86% of Python3 online submissions for Remove Duplicate Letters.
 > stack
